@@ -1,8 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -12,59 +14,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Hello, world!</title>
-
-    <style>
-        body {
-            background-color: #f8f9fa;
-            /* Light gray background color */
-        }
-
-        .sidebar {
-            background-color: #343a40;
-            /* Dark background color */
-            color: #adb5bd;
-            /* Light text color */
-            min-height: 100vh;
-        }
-
-        .sidebar-logo {
-            width: 120px;
-            height: auto;
-        }
-
-        .nav-link {
-            color: #adb5bd;
-            /* Light text color for links */
-        }
-
-        .nav-link:hover {
-            color: #ffffff;
-            /* White text color on hover */
-        }
-
-        .dropdown-item {
-            color: #343a40;
-            /* Dark text color for dropdown items */
-        }
-
-        .dropdown-item:hover {
-            background-color: #ffffff;
-            /* White background color on hover */
-            color: #343a40;
-            /* Dark text color on hover */
-        }
-    </style>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <!-- Updated logo source -->
-                    <img src="assets/logo bpkad.png" alt="Logo BPKAD" class="sidebar-logo">
+                    <img src="assets/logo bpkad.png" alt="Logo BPKAD" width="120" height="60" class="rounded-circle">
+                    </a>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <!-- ... (rest of your navigation code) ... -->
                         <li class="nav-item">
                         </li>
                         <li>
