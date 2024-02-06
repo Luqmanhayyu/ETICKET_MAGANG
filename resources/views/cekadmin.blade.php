@@ -7,6 +7,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--LOGO WEB ICON-->
+    <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
     <title>Cek Admin Pengaduan</title>
 </head>
@@ -59,7 +62,7 @@
 
 
 <body style="background-color: #f8f9fa;">
-    <!--SIDE BAR-->
+
     <div class="container-fluid">
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -67,21 +70,24 @@
                     <!--LOGO BPKAD-->
                     <img src="assets/logo bpkad.png" alt="Logo BPKAD" width="120" height="60">
                     </a>
+                    <!--GARIS PEMISAH-->
+                    <hr style="border-color: #343a40; width: 80%;">
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item"></li>
-                        <li>
-                            <a href="/admindashboard" class="nav-link px-0 align-middle text-light">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu"></ul>
+                        <!--SIDEBAR-->
+                        <a href="/admindashboard" class="nav-link px-0 align-middle text-light">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                        </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu"></ul>
+
                         </li>
                         <li>
                             <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-light">
                                 <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Menu</span></a>
                             <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Check Pengaduan</span></a>
+                                    <a href="/cekadmin" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Check Pengaduan</span></a>
                                 </li>
-                                <li class="w-100">
+                                <li>
                                     <a href="/jawabadmin" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Jawab Pengaduan</span></a>
                                 </li>
                             </ul>
@@ -101,15 +107,15 @@
                                 <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
                         </li>
                     </ul>
-                    <!--LOGO USER-->
                     <hr style="border-color: #343a40;">
                     <div class="dropdown pb-4">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
                             <span class="d-none d-sm-inline mx-1">Admin</span>
                         </a>
+                        <!--LOG OUT-->
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                            <li><a class="dropdown-item" href="/loginadmin">Log Out</a></li>
+                            <li><a class="dropdown-item" href="/loginadmin">Log out</a></li>
                         </ul>
                     </div>
                 </div>

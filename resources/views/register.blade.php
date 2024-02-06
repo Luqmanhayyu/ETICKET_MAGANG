@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LOGO WEB ICON-->
+    <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
     <title>Create Akun</title>
     <!--SCRIPT-->
@@ -102,7 +105,7 @@
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
                             <form action="/register" method="post">
-                            @csrf
+                                @csrf
                                 <div class="form-outline mb-4">
                                     <input type="text" id="nama" name="nama" class="form-control" />
                                     <label class="form-label" for="nama">Nama</label>
@@ -125,7 +128,7 @@
                                     </label>
                                 </div>
                                 <!--BUTTON LOGIN-->
-                                <button type="submit" class="btn btn-primary" >Register</button>
+                                <button type="submit" class="btn btn-primary">Register</button>
                         </div>
                         </form>
                     </div>
