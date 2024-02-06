@@ -107,18 +107,19 @@
                     <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
-                            <form>
+                            <form action="{{ route('actionlogin') }}" method="post">
+                                @csrf
                                 <div class="row">
                                     <div class="form-outline mb-4">
                                         <div class="form-outline">
-                                            <input type="text" id="form3Example1" class="form-control" />
-                                            <label class="form-label" for="form3Example1">Email</label>
+                                            <input type="text" id="email" class="form-control" />
+                                            <label class="form-label" for="email">Email</label>
                                         </div>
                                     </div>
                                     <!--PASSWORD INPUT-->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" />
-                                        <label class="form-label" for="form3Example4">Password</label>
+                                        <input type="password" id="password" class="form-control" />
+                                        <label class="form-label" for="password">Password</label>
                                     </div>
                                     <!--CHECKBOX-->
                                     <div class="form-check d-flex justify-content-start mb-4">
@@ -128,13 +129,7 @@
                                         </label>
                                     </div>
                                     <!--BUTTON LOGIN-->
-                                    <button type="button" class="btn btn-primary" onclick="onKirim()">Login</button>
-                                    <script>
-                                        function redirectToHalaman() {
-                                            window.location.href = '/halaman';
-                                        }
-                                    </script>
-
+                                    <button type="submit" class="btn btn-primary">Login</button>
                                 </div>
                             </form>
                         </div>
@@ -147,13 +142,6 @@
             ETICKET &copy; 2024
 
         </div>
-        <!--SCRIPT POP UP-->
-        <script>
-            function onKirim() {
-                alert("Berhasil Login");
-
-            }
-        </script>
 </body>
 
 </html>
