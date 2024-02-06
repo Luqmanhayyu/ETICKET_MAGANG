@@ -8,7 +8,7 @@
     <!--Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
     <!--TITLE -->
-    <title>Cek Ajuan Ticket</title>
+    <title>Cek Aduan Ticket</title>
     <!--STYLE SCSS/BOOSTRAP -->
     <style>
         body {
