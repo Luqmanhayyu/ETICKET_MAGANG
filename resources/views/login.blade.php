@@ -112,7 +112,7 @@
                                     <div class="form-outline mb-4">
                                         <div class="form-outline">
                                             <input type="text" id="form3Example1" class="form-control" />
-                                            <label class="form-label" for="form3Example1">Username</label>
+                                            <label class="form-label" for="form3Example1">Email</label>
                                         </div>
                                     </div>
                                     <!--PASSWORD INPUT-->
