@@ -5,16 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--TITLE-->
     <title>Create Akun</title>
     <!--SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
+<body style="overflow: hidden;">
     <!--STYLE CSS/BOOSTRAP-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
+            .body {
+                overflow: hidden;
+            }
+
             .background-radial-gradient {
                 background-color: hsl(218, 41%, 15%);
                 background-image: radial-gradient(650px circle at 0% 0%,

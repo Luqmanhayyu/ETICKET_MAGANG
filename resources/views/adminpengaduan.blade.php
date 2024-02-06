@@ -7,78 +7,70 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
-    <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
-
-
     <!--TITLE-->
-    <title>Admin Dashboard</title>
-    <!--STYLE CSS/BOOSTRAP-->
-    <style>
-        body,
-        html {
-            overflow: hidden;
-        }
-
-        body {
-            background-color: #f8f9fa;
-        }
-
-        .card {
-            border: none;
-            transition: transform 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .nav-link:hover {
-            color: #007bff !important;
-        }
-
-        .bg-dark {
-            background-color: hsl(218, 41%, 15%);
-            background-image: radial-gradient(650px circle at 0% 0%,
-                    hsl(218, 41%, 35%) 15%,
-                    hsl(218, 41%, 30%) 35%,
-                    hsl(218, 41%, 20%) 75%,
-                    hsl(218, 41%, 19%) 80%,
-                    transparent 100%),
-                radial-gradient(1250px circle at 100% 100%,
-                    hsl(218, 41%, 45%) 15%,
-                    hsl(218, 41%, 30%) 35%,
-                    hsl(218, 41%, 20%) 75%,
-                    hsl(218, 41%, 19%) 80%,
-                    transparent 100%);
-        }
-
-        .bg-glass {
-            background-color: hsla(0, 0%, 100%, 0.9) !important;
-            backdrop-filter: saturate(200%) blur(25px);
-        }
-    </style>
-
+    <title>Admin Pengaduan</title>
 </head>
 
 <!--STYLE CSS/BOOSTRAP-->
+<style>
+    body,
+    html {
+        overflow: hidden;
+    }
 
-<body style="background-color: #f8f9fa;">
+    body {
+        background-color: #f8f9fa;
+    }
 
+    .card {
+        border: none;
+        transition: transform 0.3s;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .nav-link:hover {
+        color: #007bff !important;
+    }
+
+    .bg-dark {
+        background-color: hsl(218, 41%, 15%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+                hsl(218, 41%, 35%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+                hsl(218, 41%, 45%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%);
+    }
+
+    .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+    }
+</style>
+
+<body style="background-color: #f8f9fa;" class="min-vh-100">
+    <!--SIDEBAR-->
     <div class="container-fluid">
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
                 <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <!--LOGO BPKAD-->
+                    <!-- Updated logo source -->
                     <img src="assets/logo bpkad.png" alt="Logo BPKAD" width="120" height="60">
                     </a>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li class="nav-item"></li>
                         <li>
-                            <!--SIDEBAR-->
-                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-light">
+                            <a href="/admindashboard" class="nav-link px-0 align-middle text-light">
                                 <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
                             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu"></ul>
                         </li>
@@ -87,10 +79,10 @@
                                 <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Menu</span></a>
                             <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="/cekadmin" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Check Pengaduan</span></a>
+                                    <a href="#" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Check Pengaduan</span></a>
                                 </li>
                                 <li>
-                                    <a href="/jawabadmin" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Jawab Pengaduan</span></a>
+                                    <a href="#" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Jawab Pengaduan</span></a>
                                 </li>
                             </ul>
                         </li>
@@ -111,42 +103,50 @@
                     </ul>
                     <hr style="border-color: #343a40;">
                     <div class="dropdown pb-4">
+                        <!--LOGO USER-->
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
                             <span class="d-none d-sm-inline mx-1">Admin</span>
                         </a>
-                        <!--LOG OUT-->
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                            <li><a class="dropdown-item" href="/loginadmin">Log out</a></li>
+                            <li><a class="dropdown-item" href="/loginadmin">Log Out</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <!--ISI HALAMAN-->
-            <div class="col py-3">
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Total Complaints</h5>
-                                <p class="card-text">2 <span class="text-success">+</span></p>
-                            </div>
+            <!--CARD1-->
+            <div class="col py-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pengaduan 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend ligula, vel tristique lacus. Proin in consectetur augue. Nullam id vulputate libero. Integer id quam a ligula porttitor ultrices nec at velit.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="btn btn-primary">Jawab Pengaduan</a>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Resolved Complaints</h5>
-                                <p class="card-text">2 <span class="text-success">+</span></p>
-                            </div>
+                </div>
+            </div>
+            <!--CARD2-->
+            <div class="col py-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pengaduan 2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend ligula, vel tristique lacus. Proin in consectetur augue. Nullam id vulputate libero. Integer id quam a ligula porttitor ultrices nec at velit.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="btn btn-primary">Jawab Pengaduan</a>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Pending Complaints</h5>
-                                <p class="card-text">2 <span class="text-success">+</span></p>
-                            </div>
+                </div>
+            </div>
+            <!--CARD3-->
+            <div class="col py-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pengaduan 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et eleifend ligula, vel tristique lacus. Proin in consectetur augue. Nullam id vulputate libero. Integer id quam a ligula porttitor ultrices nec at velit.</p>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="btn btn-primary">Jawab Pengaduan</a>
                         </div>
                     </div>
                 </div>

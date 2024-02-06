@@ -13,14 +13,20 @@
     <!--Script CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
     <!--TITLE -->
-    <title>Login</title>
+    <title>
+        Login User
+    </title>
 
 </head>
 
-<body>
+<body style="overflow: hidden;">
     <!-- STYLE CSS/BOOSTRAP -->
     <section class="background-radial-gradient overflow-hidden">
         <style>
+            .body {
+                overflow: hidden;
+            }
+
             .background-radial-gradient {
                 background-color: hsl(218, 41%, 15%);
                 background-image: radial-gradient(650px circle at 0% 0%,
@@ -136,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <!--FOOTER NAVBAR -->
+        <!--FOOTER NAVIGATOR BOTTOM-->
         <div class="container text-center pt-5 pb-5" style="color: white;">
             ETICKET &copy; 2024
 
