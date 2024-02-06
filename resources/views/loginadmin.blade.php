@@ -4,16 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--LINK CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-sOME53wYWEFqXq8iZAkY0JP7eOzmm5CFwDFq8OtABy8uPf/7a9l+IoQ5GZhZV6wSiISdqVvNbkHyi8eWfUTiJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pVlZr+i1I/y3z5DpKiLZYsbgFOf0PeCxpoExPZFiujmaGegVyKS0Mopx9VYSX8HT4h6nGc9SUxnZMNDtk3Ho/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-sOME53wYWEFqXq8iZAkY0JP7eOzmm5CFwDFq8OtABy8uPf/7a9l+IoQ5GZhZV6wSiISdqVvNbkHyi8eWfUTiJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--TITLE-->
-    <title>Create Akun</title>
-    <!--SCRIPT-->
+    <!--Script CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <!--TITLE -->
+    <title>
+        Login Admin
+    </title>
 
 </head>
 
-<body style="overflow: hidden;">
-    <!--STYLE CSS/BOOSTRAP-->
+<body>
+    <!-- STYLE CSS/BOOSTRAP -->
     <section class="background-radial-gradient overflow-hidden">
         <style>
             .body {
@@ -73,11 +80,9 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
+                            <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Tata Cara</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -87,7 +92,7 @@
             <div class="row gx-lg-5 align-items-center mb-5">
                 <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
                     <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
-                        E-TICKET <br />
+                        Login Admin E-Ticket<br />
                         <span style="color: hsl(218, 81%, 75%)">Aduan Dan Layanan</span>
                     </h1>
                     <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
@@ -103,59 +108,48 @@
                         <div class="card-body px-4 py-5 px-md-5">
                             <form>
                                 <div class="row">
-                                    <div class="col-md-6 mb-4">
+                                    <div class="form-outline mb-4">
                                         <div class="form-outline">
                                             <input type="text" id="form3Example1" class="form-control" />
-                                            <label class="form-label" for="form3Example1">Nama Depan</label>
+                                            <label class="form-label" for="form3Example1">Username</label>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="text" id="form3Example2" class="form-control" />
-                                            <label class="form-label" for="form3Example2">Nama Belakang</label>
-                                        </div>
+                                    <!--PASSWORD INPUT-->
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="form3Example4" class="form-control" />
+                                        <label class="form-label" for="form3Example4">Password</label>
                                     </div>
+                                    <!--CHECKBOX-->
+                                    <div class="form-check d-flex justify-content-start mb-4">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
+                                        <label class="form-check-label ml-0" for="form2Example33">
+                                            Ingat Saya
+                                        </label>
+                                    </div>
+                                    <!--BUTTON LOGIN-->
+                                    <button type="button" class="btn btn-primary" onclick="onKirim()">Login</button>
+                                    <script>
+                                        function redirectToHalaman() {
+                                            window.location.href = '/halaman';
+                                        }
+                                    </script>
+
                                 </div>
-                                <!--EMAIL INPUT-->
-                                <div class="form-outline mb-4">
-                                    <input type="email" id="form3Example3" class="form-control" />
-                                    <label class="form-label" for="form3Example3">Email address</label>
-                                </div>
-                                <!--PASSWORD INPUT-->
-                                <div class="form-outline mb-4">
-                                    <input type="password" id="form3Example4" class="form-control" />
-                                    <label class="form-label" for="form3Example4">Password</label>
-                                </div>
-                                <!--CHECKBOX-->
-                                <div class="form-check d-flex justify-content-start mb-4">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
-                                    <label class="form-check-label ml-0" for="form2Example33">
-                                        Izinkan untuk Daftar
-                                    </label>
-                                </div>
-                                <!--BUTTON LOGIN-->
-                                <button type="button" class="btn btn-primary" onclick="onKirim()">Login</button>
-                                <script>
-                                    function redirectToHalaman() {
-                                        window.location.href = '/login';
-                                    }
-                                </script>
+                            </form>
                         </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-        <!--FOOTER NAVIGATOR BOTTOM -->
+        <!--FOOTER NAVIGATOR BOTTOM-->
         <div class="container text-center pt-5 pb-5" style="color: white;">
             ETICKET &copy; 2024
-        </div>
 
-        <!--SCRIPT POP UP -->
+        </div>
+        <!--SCRIPT POP UP-->
         <script>
             function onKirim() {
-                alert("Akun Berhasil Di buat");
+                alert("Berhasil Login");
 
             }
         </script>

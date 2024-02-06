@@ -68,6 +68,30 @@
         .text-white {
             color: white !important;
         }
+
+        /* Adjusted styles for a smaller form card */
+        .card {
+            border: none;
+            background: none;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .form-label {
+            font-size: 14px;
+        }
+
+        .form-control {
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            font-size: 14px;
+            padding: 8px;
+        }
     </style>
 </head>
 
@@ -105,46 +129,50 @@
     <!--ISI  HALAMAN-->
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
         <!--FORM PENGISIAN PENGADUAN-->
-        <form>
-            <h2>Data Pengadu</h2>
-            <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="nama" name="nama" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="noTelp" class="form-label">Nomor Telepon</label>
-                <input type="tel" class="form-control" id="noTelp" name="noTelp" required>
-            </div>
-            <div class="mb-3">
-                <label for="alamat" class="form-label">Alamat</label>
-                <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
-            </div>
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <h2>Data Pengadu</h2>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" name="nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="noTelp" class="form-label">Nomor Telepon</label>
+                        <input type="tel" class="form-control" id="noTelp" name="noTelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="alamat" class="form-label">Alamat</label>
+                        <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
+                    </div>
 
-            <h2>Kategori</h2>
-            <div class="mb-3">
-                <label for="kategori" class="form-label">Kategori</label>
-                <select class="form-select" id="kategori" name="kategori" required>
-                    <option value="umum">Umum</option>
-                    <option value="not_umum">not Umum</option>
-                </select>
-            </div>
+                    <h2>Kategori</h2>
+                    <div class="mb-3">
+                        <label for="kategori" class="form-label">Kategori</label>
+                        <select class="form-select" id="kategori" name="kategori" required>
+                            <option value="umum">Umum</option>
+                            <option value="not_umum">not Umum</option>
+                        </select>
+                    </div>
 
-            <h2>Isi Aduan</h2>
-            <div class="mb-3">
-                <label for="judul" class="form-label">Judul</label>
-                <input type="text" class="form-control" id="judul" name="judul" required>
-            </div>
-            <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" name="pesan" rows="5" required></textarea>
-            </div>
+                    <h2>Isi Aduan</h2>
+                    <div class="mb-3">
+                        <label for="judul" class="form-label">Judul</label>
+                        <input type="text" class="form-control" id="judul" name="judul" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pesan" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="pesan" name="pesan" rows="5" required></textarea>
+                    </div>
 
-            <button type="submit" class="btn btn-primary" onclick="onKirim()">Kirim</button>
-        </form>
+                    <button type="submit" class="btn btn-primary" onclick="onKirim()">Kirim</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <!--NAVIGATOR BOTTOM-->

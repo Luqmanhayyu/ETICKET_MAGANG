@@ -12,6 +12,7 @@
     <!--STYLE SCSS/BOOSTRAP -->
     <style>
         body {
+            overflow: hidden;
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, #141e30, #243b55);
@@ -113,7 +114,7 @@
         <p class="text-white">Test</p>
     </div>
 
-    <!--NAVIGATOR BOTTOM-->
+    <!--FOTTOER NAVIGATOR BOTTOM-->
     <div class="bottonavbar text-center pt-5 pb-5" style="color: white;">
         ETICKET &copy; 2024
     </div>

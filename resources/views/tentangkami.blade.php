@@ -4,18 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--TITLE-->
     <title>Tentang Kami</title>
-    <!--Script -->
+    <!--SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
-    <!-- Section: Design Block -->
+<body style="overflow: hidden;">
+    <!--STYLE CSS/BOOSTRAP-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
+            .body {
+                overflow: hidden;
+            }
+
             .background-radial-gradient {
                 background-color: hsl(218, 41%, 15%);
                 background-image: radial-gradient(650px circle at 0% 0%,
@@ -88,21 +92,14 @@
                             <a class="nav-link active" aria-current="page" href="/informasi">Informasi</a>
                         </li>
                     </ul>
-                    <!-- Log Out Link (Moved to the right) -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="btn btn-danger" href="/login">
-                                <i class="fas fa-sign-out-alt"></i> Log Out
-                            </a>
-                        </li>
-                    </ul>
+                    <!--LOG OUT BUTTON-->
+
                 </div>
             </div>
         </nav>
 
 
-        <!--ISI -->
-        <!-- About Us Section -->
+        <!--ISI HALAMAN -->
         <section class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
             <div class="row gx-lg-5 align-items-center mb-5">
                 <div class="col-lg-6 mb-5 mb-lg-0">
@@ -138,7 +135,7 @@
         </section>
 
 
-        <!--Navigator Bottom-->
+        <!--FOOTER NAVIGATOR BOTTOM-->
         <div class="container text-center pt-5 pb-5" style="color: white;">
             ETICKET &copy; 2024
         </div>

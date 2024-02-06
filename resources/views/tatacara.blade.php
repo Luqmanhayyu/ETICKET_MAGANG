@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha384-k6LZvF6GZl2vqjW/GSEsbT6AU9pgsAKUeO2qfRXu7DEu8tFZegBoEFDs7/Cdg9fS" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" integrity="sha384-A1B/D/ehMgUtt6pp5V1pA1+9vl5vTjNVuTwj5qu5stwE3jZbxEDazP6KWEqzFDPt" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--TITLE-->
     <title>Tata Cara</title>
     <!--Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
@@ -18,6 +19,10 @@
     <!--STYLE CSS/BOOSTRAP -->
     <section class="background-radial-gradient overflow-hidden">
         <style>
+            .body {
+                overflow: hidden;
+            }
+
             .background-radial-gradient {
                 background-color: hsl(218, 41%, 15%);
                 background-image: radial-gradient(650px circle at 0% 0%,
@@ -75,7 +80,7 @@
                             <a class="nav-link active" aria-current="page" href="/tatacara">Tata Cara</a>
                         </li>
                     </ul>
-                    <!--BUTTON LOG OUT-->
+                    <!--LOG OUT BUTTON-->
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="btn btn-danger" href="/login">

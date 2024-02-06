@@ -20,6 +20,10 @@
     <!--STYLE CSS/BOOSTRAP-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
+            .body {
+                overflow: hidden;
+            }
+
             .background-radial-gradient {
                 background-color: hsl(218, 41%, 15%);
                 background-image: radial-gradient(650px circle at 0% 0%,
@@ -161,7 +165,7 @@
             </div>
 
 
-            <!-- your existing content -->
+            <!--FOOTER NAVIGATOR BOTTOM-->
             <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
                 ETICKET &copy; 2024
             </div>

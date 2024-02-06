@@ -46,3 +46,15 @@ Route::get('/menu', function () {
 Route::get('/admindashboard', function () {
     return view('admindashboard');
 });
+Route::get('/cekadmin', function () {
+    return view('cekadmin');
+});
+Route::get('/adminpengaduan', function () {
+    return view('adminpengaduan');
+});
+Route::get('/jawabadmin', function () {
+    return view('jawabadmin');
+});
+Route::get('/loginadmin', function () {
+    return view('loginadmin');
+});
