@@ -2,190 +2,127 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Link Bootstrap CDN -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Link Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-sOME53wYWEFqXq8iZAkY0JP7eOzmm5CFwDFq8OtABy8uPf/7a9l+IoQ5GZhZV6wSiISdqVvNbkHyi8eWfUTiJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Hello, world!</title>
 
     <style>
         body {
-            font-size: 0.875rem;
-            margin: 0;
-            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            /* Light gray background color */
         }
 
         .sidebar {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            z-index: 1000;
-            padding-top: 56px;
-            box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
-            background-color: #1f3577;
-            /* Sidebar background color */
-            color: white;
-            /* Text color */
-            width: 250px;
-            transition: width 0.3s;
-            overflow-x: hidden;
+            background-color: #343a40;
+            /* Dark background color */
+            color: #adb5bd;
+            /* Light text color */
+            min-height: 100vh;
+        }
+
+        .sidebar-logo {
+            width: 120px;
+            height: auto;
         }
 
         .nav-link {
-            font-size: 1rem;
-            color: white;
-            padding: 12px 16px;
-            /* Text color */
-            transition: padding 0.3s;
+            color: #adb5bd;
+            /* Light text color for links */
         }
 
         .nav-link:hover {
-            padding-left: 20px;
-            background-color: #283d71;
-            /* Highlight color on hover */
+            color: #ffffff;
+            /* White text color on hover */
         }
 
-        main {
-            padding: 24px;
-            margin-left: 250px;
-            transition: margin-left 0.3s;
+        .dropdown-item {
+            color: #343a40;
+            /* Dark text color for dropdown items */
         }
 
-        .border-bottom {
-            border-bottom: 1px solid #dee2e6;
-            /* Border color between header and main content */
-        }
-
-        h1 {
-            color: #1f3577;
-            /* Header text color */
-        }
-
-        .navbar {
-            background-color: #1f3577;
-            /* Navbar background color */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-
-        .navbar-brand,
-        .navbar-text {
-            color: white;
-            /* Navbar text color */
-        }
-
-        .navbar-toggler-icon {
-            background-color: white;
-            /* Navbar toggle icon color */
-        }
-
-        #sidebarCollapse {
-            width: 40px;
-            height: 40px;
-            background-color: #1f3577;
-            color: white;
-            border: none;
-            cursor: pointer;
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            z-index: 1001;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s;
-        }
-
-        #sidebarCollapse i {
-            font-size: 20px;
-        }
-
-        #sidebarCollapse.active {
-            width: 250px;
-        }
-
-        #sidebarCollapse.active i::before {
-            content: '\f104';
-            /* Unicode character for arrow right */
+        .dropdown-item:hover {
+            background-color: #ffffff;
+            /* White background color on hover */
+            color: #343a40;
+            /* Dark text color on hover */
         }
     </style>
-
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block sidebar">
-                <div class="position-sticky">
-                    <ul class="nav flex-column">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 sidebar">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <!-- Updated logo source -->
+                    <img src="assets/logo bpkad.png" alt="Logo BPKAD" class="sidebar-logo">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <!-- ... (rest of your navigation code) ... -->
                         <li class="nav-item">
-                            <h2 class="sidebar-heading">SB Admin</h2>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <i class="fas fa-tachometer-alt"></i> Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-chart-bar"></i> Charts
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-table"></i> Tables
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Main content -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-                <button id="sidebarCollapse"><i class="fas fa-bars"></i></button>
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        <i class="fas fa-search"></i>
-                                    </a>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
                                 </li>
                             </ul>
-                        </div>
+                        </li>
+                        <li>
+                            <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Menu</span></a>
+                            <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Check Pengaduan</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Jawab Pengaduan</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <li class="w-100">
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                            <span class="d-none d-sm-inline mx-1">Admin</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        </ul>
                     </div>
-                </nav>
-
-                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                    <h1 class="h2">Dashboard</h1>
                 </div>
-
-                <!-- Your main content goes here -->
-
-            </main>
+            </div>
+            <div class="col py-3">
+                test
+            </div>
         </div>
     </div>
-
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
-    <script>
-        document.getElementById('sidebarCollapse').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
 </body>
 
 </html>
