@@ -96,7 +96,7 @@
                     <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
-                            <form action="/register" method="post">
+                            <form action="{{route('actionregister')}}" method="post">
                             @csrf
                                 <div class="form-outline mb-4">
                                     <input type="text" id="nama" name="nama" class="form-control" />
