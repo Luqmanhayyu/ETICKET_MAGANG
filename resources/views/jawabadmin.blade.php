@@ -137,13 +137,18 @@
                                 <label for="response" class="form-label">Jawaban Anda</label>
                                 <textarea class="form-control" id="response" name="response" rows="5" required></textarea>
                             </div>
-
-                            <button type="submit" class="btn btn-primary">Kirim Jawaban</button>
+                            <button type="button" class="btn btn-primary" onclick="onKirim()">Kirim Jawaban</button>
                         </form>
                     </div>
                 </div>
             </div>
+            <!--SCRIPT POP UP-->
+            <script>
+                function onKirim() {
+                    alert("Jawaban Berhasil Di Kirim");
 
+                }
+            </script>
 
 </body>
 

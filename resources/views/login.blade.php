@@ -66,6 +66,10 @@
                 background-color: hsla(0, 0%, 100%, 0.9) !important;
                 backdrop-filter: saturate(200%) blur(25px);
             }
+
+            .nav-link:hover {
+                color: #007bff !important;
+            }
         </style>
         <!--NAVBAR-->
 
@@ -127,7 +131,13 @@
                                     </label>
                                 </div>
                                 <!--BUTTON LOGIN-->
-                                <a href="/halaman" class="btn btn-primary">Login</a>
+                                <button type="button" class="btn btn-primary" onclick="onKirim()">Login</button>
+                                <script>
+                                    function redirectToHalaman() {
+                                        window.location.href = '/halaman';
+                                    }
+                                </script>
+
 
                             </div>
                             </form>
@@ -144,6 +154,13 @@
     </section>
     <!--Script CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <!--SCRIPT POP UP-->
+    <script>
+        function onKirim() {
+            alert("Berhasil Login");
+
+        }
+    </script>
 </body>
 
 </html>

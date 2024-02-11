@@ -120,7 +120,7 @@
         </p>
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Cari Pengaduan" aria-label="Search">
-            <button class="btn btn-primary" type="submit">Cari</button>
+            <button type="button" class="btn btn-primary" onclick="onKirim()">Cari</button>
         </form>
         <!--ISI HASIL PENGECEKAN-->
     </div>
@@ -137,6 +137,10 @@
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");
             dropdownMenu.classList.toggle("show");
+        }
+
+        function onKirim() {
+            alert("Data Berhasul Di Temukan");
         }
     </script>
     </section>

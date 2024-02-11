@@ -69,6 +69,10 @@
                 margin-left: auto;
                 margin-top: 18px;
             }
+
+            .nav-link:hover {
+                color: #007bff !important;
+            }
         </style>
         <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">

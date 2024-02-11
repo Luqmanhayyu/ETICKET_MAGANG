@@ -102,6 +102,10 @@
             margin-left: auto;
             margin-top: 18px;
         }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
     </style>
 </head>
 
@@ -203,6 +207,10 @@
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");
             dropdownMenu.classList.toggle("show");
+        }
+
+        function onKirim() {
+            alert("Pengadaduan Berhasil Di Kirim");
         }
     </script>
     </section>

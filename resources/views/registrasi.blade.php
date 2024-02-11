@@ -67,6 +67,10 @@
                 background-color: hsla(0, 0%, 100%, 0.9) !important;
                 backdrop-filter: saturate(200%) blur(25px);
             }
+
+            .nav-link:hover {
+                color: #007bff !important;
+            }
         </style>
         <!--NAVBAR-->
 

@@ -71,6 +71,10 @@
         .navbar-brand {
             margin-right: auto;
         }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
     </style>
 </head>
 

@@ -75,6 +75,10 @@
                 width: 100%;
                 height: 100%;
             }
+
+            .nav-link:hover {
+                color: #007bff !important;
+            }
         </style>
         <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">

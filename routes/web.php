@@ -66,3 +66,6 @@ Route::get('/loginadmin', function () {
 Route::get('/settingprofile', function () {
     return view('settingprofile');
 });
+Route::get('/settingprofileadmin', function () {
+    return view('settingprofileadmin');
+});
