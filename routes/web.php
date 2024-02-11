@@ -15,13 +15,17 @@ use App\Http\Controllers\LoginController;
 |
 */
 
+Route::get('login', [LoginController::class, 'login'])->name('login');
+Route::post('login/actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+Route::get('home', [LoginController::class, 'index'])->name('home')->middleware('auth');
+Route::get('login/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/registrasi', function () {
-    return view('registrasi');
+Route::get('/', function () {
+    return view('login');
 });
 Route::get('/halaman', function () {
     return view('halaman');
