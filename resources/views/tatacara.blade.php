@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--LINK CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha384-k6LZvF6GZl2vqjW/GSEsbT6AU9pgsAKUeO2qfRXu7DEu8tFZegBoEFDs7/Cdg9fS" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" integrity="sha384-A1B/D/ehMgUtt6pp5V1pA1+9vl5vTjNVuTwj5qu5stwE3jZbxEDazP6KWEqzFDPt" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--LOGO WEB ICON-->
     <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
@@ -63,6 +62,13 @@
                 width: 300px;
                 height: 300px;
             }
+
+            /* New styles */
+            .profile-dropdown {
+                margin-right: 100px;
+                margin-left: auto;
+                margin-top: 18px;
+            }
         </style>
         <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -83,23 +89,27 @@
                             <a class="nav-link active" aria-current="page" href="/tatacara">Tata Cara</a>
                         </li>
                     </ul>
-                    <!--LOG OUT BUTTON-->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="btn btn-danger" href="/login">
-                                <i class="fas fa-sign-out-alt"></i> Log Out
-                            </a>
-                        </li>
-                    </ul>
+                    <!--PROFILE DROPDOWN-->
+                    <div class="dropdown pb-4 profile-dropdown">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
+                            <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
+                                <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
+                            <li><a class="dropdown-item" href="/login">Log out</a></li>
+                            <li><a class="dropdown-item" href="/settingprofile">Setting Profile</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+        </nav>
         </nav>
         <!--HALAMAN ISI-->
 
         <!--CARD1-->
         <div class="container px-2 py-2 px-md-2 text-center text-lg-start my-5">
-            <div class="row gx-lg-4 align-items-center mb-5">
-                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+            <div class="row gx-lg-4 align-items-center mb-5" data-aos="fade-up">
+                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10" data-aos="fade-right">
                     <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
                         Tuctorial<br />
                         <span style="color: hsl(218, 81%, 75%)">Aduan Dan Layanan</span>
@@ -111,14 +121,14 @@
                 </div>
 
                 <!-- POSISI CARD1-->
-                <div class="col-lg-6 mb-5 mb-lg-6 position-relative">
+                <div class="col-lg-6 mb-5 mb-lg-6 position-relative" data-aos="fade-left">
                     <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
                     <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
 
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
                             <!--ISI CARD1-->
-                            <img src="assets/informasi.png" class="card-img-top" alt="..." style="height: 140px;" data-aos="fade-right">
+                            <img src="assets/informasi.png" class="card-img-top" alt="..." style="height: 140px;">
                         </div>
                     </div>
                 </div>
@@ -126,21 +136,21 @@
         </div>
         <!--CARD 2-->
         <div class="container px-2 py-2 px-md-2 text-center text-lg-start my-5">
-            <div class="row gx-lg-4 align-items-center mb-5">
+            <div class="row gx-lg-4 align-items-center mb-5" data-aos="fade-up">
                 <!--POSISI CARD2-->
-                <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                <div class="col-lg-6 mb-5 mb-lg-0 position-relative" data-aos="fade-right">
                     <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
                     <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
 
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
                             <!--ISI CARD 1-->
-                            <img src="assets/pengaduan.png" class="card-img-top" alt="..." style="height: 140px;" data-aos="fade-left">
+                            <img src="assets/pengaduan.png" class="card-img-top" alt="..." style="height: 140px;">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10" data-aos="fade-left">
                     <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
                         Tuctorial<br />
                         <span style="color: hsl(218, 81%, 75%)">Repoert Pengaduan</span>
@@ -154,8 +164,8 @@
         </div>
         <!--CARD3-->
         <div class="container px-2 py-2 px-md-2 text-center text-lg-start my-5">
-            <div class="row gx-lg-4 align-items-center mb-5">
-                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+            <div class="row gx-lg-4 align-items-center mb-5" data-aos="fade-up">
+                <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10" data-aos="fade-right">
                     <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
                         Contact Us<br />
                         <span style="color: hsl(218, 81%, 75%)">Aduan Dan Layanan</span>
@@ -166,14 +176,14 @@
                     </p>
                 </div>
                 <!--POSISI CARD2-->
-                <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+                <div class="col-lg-6 mb-5 mb-lg-0 position-relative" data-aos="fade-left">
                     <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
                     <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
 
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
                             <!--ISI CARD 2-->
-                            <img src="assets/cekpengaduan.png" class="card-img-top" alt="..." style="height: 140px;" data-aos="fade-right">
+                            <img src="assets/cekpengaduan.png" class="card-img-top" alt="..." style="height: 140px;">
                         </div>
                     </div>
                 </div>
@@ -181,10 +191,17 @@
         </div>
 
         <!--FOOTER NAVIGATOR BOTTOM-->
-        <div class="container text-center pt-5 pb-5" style="color: white;">
-            ETICKET &copy; 2024
+        <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+            <i class="fas fa-phone-alt">E-TICKET 2024</i>
         </div>
+        </div>
+        <!--SCRIPT GAMBAR-->
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" integrity="sha384-A1B/D/ehMgUtt6pp5V1pA1+9vl5vTjNVuTwj5qu5stwE3jZbxEDazP6KWEqzFDPt" crossorigin="anonymous"></script>
         <script>
+            function toggleDropdown() {
+                var dropdownMenu = document.getElementById("dropdownMenu");
+                dropdownMenu.classList.toggle("show");
+            }
             AOS.init();
         </script>
     </section>

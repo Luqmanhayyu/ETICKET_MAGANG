@@ -86,7 +86,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/login">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
@@ -139,8 +139,8 @@
 
 
         <!--FOOTER NAVIGATOR BOTTOM-->
-        <div class="container text-center pt-5 pb-5" style="color: white;">
-            ETICKET &copy; 2024
+        <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+            <i class="fas fa-phone-alt">E-TICKET 2024</i>
         </div>
 </body>
 

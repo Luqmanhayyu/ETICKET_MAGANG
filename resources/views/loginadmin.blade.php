@@ -145,8 +145,9 @@
             </div>
         </div>
         <!--FOOTER NAVIGATOR BOTTOM-->
-        <div class="container text-center pt-5 pb-5" style="color: white;">
-            ETICKET &copy; 2024
+        <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+            <i class="fas fa-phone-alt">E-TICKET 2024</i>
+        </div>
 
         </div>
         <!--SCRIPT POP UP-->

@@ -95,6 +95,13 @@
             font-size: 14px;
             padding: 8px;
         }
+
+        /* New styles */
+        .profile-dropdown {
+            margin-right: 100px;
+            margin-left: auto;
+            margin-top: 18px;
+        }
     </style>
 </head>
 
@@ -118,16 +125,20 @@
                         <a class="nav-link active" aria-current="page" href="/informasi">Informasi</a>
                     </li>
                 </ul>
-                <!--BUTTON LOG OUT-->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="btn btn-danger" href="/login">
-                            <i class="fas fa-sign-out-alt"></i> Log Out
-                        </a>
-                    </li>
-                </ul>
+                <!--PROFILE DROPDOWN-->
+                <div class="dropdown pb-4 profile-dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
+                        <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
+                            <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
+                        <li><a class="dropdown-item" href="/login">Log out</a></li>
+                        <li><a class="dropdown-item" href="/settingprofile">Setting Profile</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+    </nav>
     </nav>
     <!--ISI  HALAMAN-->
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
@@ -178,9 +189,9 @@
         </div>
     </div>
 
-    <!--NAVIGATOR BOTTOM-->
-    <div class="bottomvavbar text-center pt-5 pb-5" style="color: white;">
-        ETICKET &copy; 2024
+    <!--FOOTER NAVIGATOR BOTTOM-->
+    <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+        <i class="fas fa-phone-alt">E-TICKET 2024</i>
     </div>
 
     <!--SCRIPT  POP UP PENGEDUAN-->
@@ -188,7 +199,14 @@
         function onKirim() {
             alert("Pesan telah dikirim!");
         }
+
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("show");
+        }
     </script>
+    </section>
+
 </body>
 
 </html>

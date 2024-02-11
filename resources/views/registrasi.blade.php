@@ -4,19 +4,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--LINK CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-sOME53wYWEFqXq8iZAkY0JP7eOzmm5CFwDFq8OtABy8uPf/7a9l+IoQ5GZhZV6wSiISdqVvNbkHyi8eWfUTiJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pVlZr+i1I/y3z5DpKiLZYsbgFOf0PeCxpoExPZFiujmaGegVyKS0Mopx9VYSX8HT4h6nGc9SUxnZMNDtk3Ho/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--LOGO WEB ICON-->
     <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
-    <!--TITLE-->
-    <title>Create Akun</title>
-    <!--SCRIPT-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
-
+    <!--TITLE -->
+    <title>
+        Registrasi User
+    </title>
+    <!--Script CDN for Google reCAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body style="overflow: hidden;">
-    <!--STYLE CSS/BOOSTRAP-->
+    <!-- STYLE CSS/BOOSTRAP -->
     <section class="background-radial-gradient overflow-hidden">
         <style>
             .body {
@@ -64,9 +69,10 @@
             }
         </style>
         <!--NAVBAR-->
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <img src="assets/logo bpkad.png" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
             <div class="container-fluid">
+                <img src="assets/logo bpkad.png" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -76,11 +82,9 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Tentang Kami</a>
+                            <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Tata Cara</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -104,48 +108,45 @@
                     <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
-                            <<<<<<< HEAD <form action="/register" method="post">
-                                @csrf
-                                =======
-                                <form action="{{route('actionregister')}}" method="post">
-                                    @csrf
-                                    >>>>>>> 9ef50adf29813398d2142a2020199cc7ec932d1c
-                                    <div class="form-outline mb-4">
-                                        <input type="text" id="nama" name="nama" class="form-control" />
-                                        <label class="form-label" for="nama">Nama</label>
+                            <div class="row">
+                                <div class="form-outline mb-4">
+                                    <div class="form-outline">
+                                        <input type="text" id="email" class="form-control" />
+                                        <label class="form-label" for="email">Email</label>
                                     </div>
-                                    <!--EMAIL INPUT-->
-                                    <div class="form-outline mb-4">
-                                        <input type="email" id="email" name="email" class="form-control" />
-                                        <label class="form-label" for="email">Email address</label>
-                                    </div>
-                                    <!--PASSWORD INPUT-->
-                                    <div class="form-outline mb-4">
-                                        <input type="password" id="password" name="password" class="form-control" />
-                                        <label class="form-label" for="password">Password</label>
-                                    </div>
-                                    <!--CHECKBOX-->
-                                    <div class="form-check d-flex justify-content-start mb-4">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
-                                        <label class="form-check-label ml-0" for="form2Example33">
-                                            Izinkan untuk Daftar
-                                        </label>
-                                    </div>
-                                    <!--BUTTON LOGIN-->
-                                    <button type="submit" class="btn btn-primary">Register</button>
+                                </div>
+                                <!--PASSWORD INPUT-->
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="password" class="form-control" />
+                                    <label class="form-label" for="password">Password</label>
+                                </div>
+                                <!--CAPTCHA-->
+                                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                                <!--CHECKBOX-->
+                                <div class="form-check d-flex justify-content-start mb-4">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
+                                    <label class="form-check-label ml-0" for="form2Example33">
+                                        Ingat Saya
+                                    </label>
+                                </div>
+                                <!--BUTTON LOGIN-->
+                                <a href="/login" class="btn btn-primary">Registrasi</a>
+
+                            </div>
+                            </form>
                         </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
         <!--FOOTER NAVIGATOR BOTTOM-->
         <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
-            <i class="fas fa-phone-alt">E-TICKET 2024</i>
+            <i class="fas fa-phone-alt"></i> Telepon |
+            <i class="fab fa-instagram"></i> Instagram | E-TICKET 2024
         </div>
-
-        <!--SCRIPT POP UP -->
+    </section>
+    <!--Script CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
 </body>
 
 </html>

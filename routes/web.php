@@ -14,24 +14,15 @@ use App\Http\Controllers\LoginController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('register', [RegistrationController::class, 'register'])->name('register');
-Route::post('register/action', [RegistrationController::class, 'actionregister'])->name('actionregister');
 
-Route::get('login', [LoginController::class, 'login'])->name('login');
-Route::post('login/actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
-Route::get('home', [LoginController::class, 'index'])->name('home')->middleware('auth');
-Route::get('login/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/', function () {
-    return view('login');
+Route::get('/registrasi', function () {
+    return view('registrasi');
 });
-//Route::get('/registerPage', function () {
-//    return view('register');
-//});
 Route::get('/halaman', function () {
     return view('halaman');
 });
@@ -67,4 +58,7 @@ Route::get('/jawabadmin', function () {
 });
 Route::get('/loginadmin', function () {
     return view('loginadmin');
+});
+Route::get('/settingprofile', function () {
+    return view('settingprofile');
 });
