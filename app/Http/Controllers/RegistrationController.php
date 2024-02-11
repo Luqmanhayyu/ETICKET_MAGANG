@@ -4,21 +4,26 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
+use Session;
+use Illuminate\Support\Facades\Hash;
 
 class RegistrationController extends Controller
 {
-    public function store()
+    public function register()
     {
-        $this->validate(request(), [
-            'name' => 'required',
-            'email' => 'required|email',
-            'password' => 'required'
+        return view('register');
+    }
+    
+    public function actionregister(Request $request)
+    {
+        $user = User::create([
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'nama' => $request->nama,
         ]);
-        
-        User::create(request(['name', 'email', 'password']));
-        
-        auth()->login($user);
-        
-        return redirect()->route('halaman')->with(['success' => 'Data Berhasil Disimpan!']);
+
+        Session::flash('message', 'Register Berhasil. Akun Anda sudah Aktif silahkan Login menggunakan username dan password.');
+        return redirect('login');
     }
 }

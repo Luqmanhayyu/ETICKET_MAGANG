@@ -104,31 +104,35 @@
                     <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
-                            <form action="/register" method="post">
+                            <<<<<<< HEAD <form action="/register" method="post">
                                 @csrf
-                                <div class="form-outline mb-4">
-                                    <input type="text" id="nama" name="nama" class="form-control" />
-                                    <label class="form-label" for="nama">Nama</label>
-                                </div>
-                                <!--EMAIL INPUT-->
-                                <div class="form-outline mb-4">
-                                    <input type="email" id="email" name="email" class="form-control" />
-                                    <label class="form-label" for="email">Email address</label>
-                                </div>
-                                <!--PASSWORD INPUT-->
-                                <div class="form-outline mb-4">
-                                    <input type="password" id="password" name="password" class="form-control" />
-                                    <label class="form-label" for="password">Password</label>
-                                </div>
-                                <!--CHECKBOX-->
-                                <div class="form-check d-flex justify-content-start mb-4">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
-                                    <label class="form-check-label ml-0" for="form2Example33">
-                                        Izinkan untuk Daftar
-                                    </label>
-                                </div>
-                                <!--BUTTON LOGIN-->
-                                <button type="submit" class="btn btn-primary">Register</button>
+                                =======
+                                <form action="{{route('actionregister')}}" method="post">
+                                    @csrf
+                                    >>>>>>> 9ef50adf29813398d2142a2020199cc7ec932d1c
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="nama" name="nama" class="form-control" />
+                                        <label class="form-label" for="nama">Nama</label>
+                                    </div>
+                                    <!--EMAIL INPUT-->
+                                    <div class="form-outline mb-4">
+                                        <input type="email" id="email" name="email" class="form-control" />
+                                        <label class="form-label" for="email">Email address</label>
+                                    </div>
+                                    <!--PASSWORD INPUT-->
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="password" name="password" class="form-control" />
+                                        <label class="form-label" for="password">Password</label>
+                                    </div>
+                                    <!--CHECKBOX-->
+                                    <div class="form-check d-flex justify-content-start mb-4">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
+                                        <label class="form-check-label ml-0" for="form2Example33">
+                                            Izinkan untuk Daftar
+                                        </label>
+                                    </div>
+                                    <!--BUTTON LOGIN-->
+                                    <button type="submit" class="btn btn-primary">Register</button>
                         </div>
                         </form>
                     </div>
@@ -136,9 +140,9 @@
             </div>
         </div>
         </div>
-        <!--FOOTER NAVIGATOR BOTTOM -->
-        <div class="container text-center pt-5 pb-5" style="color: white;">
-            ETICKET &copy; 2024
+        <!--FOOTER NAVIGATOR BOTTOM-->
+        <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+            <i class="fas fa-phone-alt">E-TICKET 2024</i>
         </div>
 
         <!--SCRIPT POP UP -->
