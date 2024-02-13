@@ -140,7 +140,7 @@
         }
 
         function onKirim() {
-            alert("Data Berhasul Di Temukan");
+            alert("Data Berhasil Di Temukan");
         }
     </script>
     </section>

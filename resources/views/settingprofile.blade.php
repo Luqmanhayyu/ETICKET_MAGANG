@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pVlZr+i1I/y3z5DpKiLZYsbgFOf0PeCxpoExPZFiujmaGegVyKS0Mopx9VYSX8HT4h6nGc9SUxnZMNDtk3Ho/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--TITLE -->
-    <title>Setting Profile</title>
+    <title>Setting Profile Admin</title>
     <style>
         .background-radial-gradient {
             background-color: hsl(218, 41%, 15%);
@@ -40,6 +40,8 @@
             background-color: #007bff;
             color: #fff;
             border-radius: 10px 10px 0 0;
+            position: relative;
+            /* Tambahkan */
         }
 
         .profile-image {
@@ -79,6 +81,23 @@
         .nav-link:hover {
             color: #007bff !important;
         }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 600x;
+            font-size: 1.5rem;
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #ccc;
+
+        }
     </style>
 </head>
 
@@ -93,7 +112,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/admindashboard">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
@@ -120,10 +139,13 @@
     <!--SETTING PROFILE CARD-->
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6    ">
+            <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header text-center">
-                        <h4>Setting Profile</h4>
+                    <div class="card-header">
+                        <a href="/halaman" class="close" aria-label="Close" onclick="closeSettingProfile()">
+                            <span aria-hidden="true">&times;</span>
+                        </a>
+                        <h4 class="text-center">Setting Profile</h4>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
@@ -157,9 +179,14 @@
 
                 function onKirim() {
                     alert("Profile berhasil Di Ubah");
+                }
 
+                function closeSettingProfile() {
+                    // Fungsi untuk menutup pengaturan profil
                 }
             </script>
+        </div>
+    </div>
 </body>
 
 </html>

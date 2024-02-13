@@ -123,9 +123,6 @@
                         <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/informasi">Informasi</a>
                     </li>
                 </ul>
@@ -156,16 +153,15 @@
                         <input type="text" class="form-control" id="nama" name="nama" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
                         <label for="noTelp" class="form-label">Nomor Telepon</label>
                         <input type="tel" class="form-control" id="noTelp" name="noTelp" required>
                     </div>
                     <div class="mb-3">
-                        <label for="alamat" class="form-label">Alamat</label>
-                        <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
+                        <label for="Kodepengaduan" class="form-label">Kode Pengaduan</label>
+                        <select class="form-select" id="Kodepengaduan" name="Kodepengaduan" required>
+                            <option value="umum">Umum</option>
+                            <option value="not_umum">not Umum</option>
+                        </select>
                     </div>
 
                     <h2>Kategori</h2>

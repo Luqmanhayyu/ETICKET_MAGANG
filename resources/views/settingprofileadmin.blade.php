@@ -40,6 +40,8 @@
             background-color: #007bff;
             color: #fff;
             border-radius: 10px 10px 0 0;
+            position: relative;
+            /* Tambahkan */
         }
 
         .profile-image {
@@ -79,6 +81,23 @@
         .nav-link:hover {
             color: #007bff !important;
         }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 600x;
+            font-size: 1.5rem;
+            color: #fff;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #ccc;
+
+        }
     </style>
 </head>
 
@@ -96,10 +115,10 @@
                         <a class="nav-link active" aria-current="page" href="/admindashboard">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
+                        <a class="nav-link active" aria-current="page" href="/cekadmin">Cek Pengaduan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/informasi">Informasi</a>
+                        <a class="nav-link active" aria-current="page" href="/jawabadmin">Jawab Pengaduan</a>
                     </li>
 
                 </ul>
@@ -120,10 +139,13 @@
     <!--SETTING PROFILE CARD-->
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6    ">
+            <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header text-center">
-                        <h4>Setting Profile</h4>
+                    <div class="card-header">
+                        <a href="/admindashboard" class="close" aria-label="Close" onclick="closeSettingProfile()">
+                            <span aria-hidden="true">&times;</span>
+                        </a>
+                        <h4 class="text-center">Setting Profile</h4>
                     </div>
                     <div class="card-body">
                         <div class="text-center">
@@ -157,9 +179,14 @@
 
                 function onKirim() {
                     alert("Profile berhasil Di Ubah");
+                }
 
+                function closeSettingProfile() {
+                    // Fungsi untuk menutup pengaturan profil
                 }
             </script>
+        </div>
+    </div>
 </body>
 
 </html>

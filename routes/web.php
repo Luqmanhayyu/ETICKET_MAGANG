@@ -45,6 +45,9 @@ Route::get('/tatacara', function () {
 Route::get('/tentangkami', function () {
     return view('tentangkami');
 });
+Route::get('/tentangkami1', function () {
+    return view('tentangkami1');
+});
 Route::get('/menu', function () {
     return view('menu');
 });
@@ -68,4 +71,7 @@ Route::get('/settingprofile', function () {
 });
 Route::get('/settingprofileadmin', function () {
     return view('settingprofileadmin');
+});
+Route::get('/test1', function () {
+    return view('test1');
 });

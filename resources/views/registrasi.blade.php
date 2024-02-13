@@ -83,7 +83,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="/login">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
@@ -124,8 +124,13 @@
                                     <input type="password" id="password" class="form-control" />
                                     <label class="form-label" for="password">Password</label>
                                 </div>
-                                <!--CAPTCHA-->
-                                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                                <!--CAPTCHA DAN INPUT-->
+                                <div style="display: flex; align-items: center;">
+                                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="password" class="form-control" />
+                                    </div>
+                                </div>
                                 <!--CHECKBOX-->
                                 <div class="form-check d-flex justify-content-start mb-4">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
@@ -133,8 +138,8 @@
                                         Ingat Saya
                                     </label>
                                 </div>
-                                <!--BUTTON LOGIN-->
-                                <a href="/login" class="btn btn-primary">Registrasi</a>
+                                <!--BUTTON REGISTRASI-->
+                                <button type="button" class="btn btn-primary" onclick="onKirim()">Registrasi</button>
 
                             </div>
                             </form>
@@ -151,6 +156,12 @@
     </section>
     <!--Script CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <script>
+        function onKirim() {
+            alert("Acount Berhasil Dibuat");
+
+        }
+    </script>
 </body>
 
 </html>
