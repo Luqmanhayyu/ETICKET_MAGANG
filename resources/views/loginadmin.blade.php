@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Script CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <!--LOGO WEB ICON-->
+    <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE -->
     <title>
         Login Admin
@@ -142,8 +145,9 @@
             </div>
         </div>
         <!--FOOTER NAVIGATOR BOTTOM-->
-        <div class="container text-center pt-5 pb-5" style="color: white;">
-            ETICKET &copy; 2024
+        <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+            <i class="fas fa-phone-alt">E-TICKET 2024</i>
+        </div>
 
         </div>
         <!--SCRIPT POP UP-->

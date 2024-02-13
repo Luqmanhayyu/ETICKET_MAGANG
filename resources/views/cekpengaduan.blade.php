@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <!--LOGO WEB ICON-->
+    <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE -->
     <title>Cek Aduan Ticket</title>
     <!--STYLE SCSS/BOOSTRAP -->
@@ -64,6 +67,13 @@
             color: white;
             padding: 10px;
         }
+
+        /* New styles */
+        .profile-dropdown {
+            margin-right: 100px;
+            margin-left: auto;
+            margin-top: 18px;
+        }
     </style>
 </head>
 
@@ -88,16 +98,20 @@
                     </li>
                 </ul>
             </div>
-            <!--BUTTON LOG OUT-->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="btn btn-danger" href="/login">
-                        <i class="fas fa-sign-out-alt"></i> Log Out
-                    </a>
-                </li>
-            </ul>
-
+            <!--PROFILE DROPDOWN-->
+            <div class="dropdown pb-4 profile-dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
+                    <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
+                        <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
+                    </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
+                    <li><a class="dropdown-item" href="/login">Log out</a></li>
+                    <li><a class="dropdown-item" href="/settingprofile">Setting Profile</a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
     </nav>
     <!--ISI HALAMAN-->
     <div class="header-text text-center">Cek Ajuan Ticket</div>
@@ -106,18 +120,32 @@
         </p>
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Cari Pengaduan" aria-label="Search">
-            <button class="btn btn-primary" type="submit">Cari</button>
+            <button type="button" class="btn btn-primary" onclick="onKirim()">Cari</button>
         </form>
         <!--ISI HASIL PENGECEKAN-->
     </div>
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
-        <p class="text-white">Test</p>
+        <p class="text-black">HASIL PENCARIAN</p>
     </div>
 
-    <!--FOTTOER NAVIGATOR BOTTOM-->
-    <div class="bottonavbar text-center pt-5 pb-5" style="color: white;">
-        ETICKET &copy; 2024
+    <!--FOOTER NAVIGATOR BOTTOM-->
+    <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+        <i class="fas fa-phone-alt">E-TICKET 2024</i>
     </div>
+    <!--SCRIPT-->
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("show");
+        }
+
+        function onKirim() {
+            alert("Data Berhasil Di Temukan");
+        }
+    </script>
+    </section>
+
+
 </body>
 
 </html>

@@ -73,6 +73,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/tatacara">Tata Cara</a>
+                    </li>
                 </ul>
                 <!-- Profile Dropdown -->
                 <div class="dropdown pb-4 profile-dropdown">

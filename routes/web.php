@@ -14,20 +14,19 @@ use App\Http\Controllers\LoginController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('register', [RegistrationController::class, 'register'])->name('register');
-Route::post('register/action', [RegistrationController::class, 'actionregister'])->name('actionregister');
 
 Route::get('login', [LoginController::class, 'login'])->name('login');
-Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+Route::post('login/actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 Route::get('home', [LoginController::class, 'index'])->name('home')->middleware('auth');
-Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
+Route::get('login/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
-Route::get('/', function () {
+
+Route::get('/login', function () {
     return view('login');
 });
-//Route::get('/registerPage', function () {
-//    return view('register');
-//});
+Route::get('/registrasi', function () {
+    return view('registrasi');
+});
 Route::get('/halaman', function () {
     return view('halaman');
 });
@@ -46,6 +45,9 @@ Route::get('/tatacara', function () {
 Route::get('/tentangkami', function () {
     return view('tentangkami');
 });
+Route::get('/tentangkami1', function () {
+    return view('tentangkami1');
+});
 Route::get('/menu', function () {
     return view('menu');
 });
@@ -63,4 +65,13 @@ Route::get('/jawabadmin', function () {
 });
 Route::get('/loginadmin', function () {
     return view('loginadmin');
+});
+Route::get('/settingprofile', function () {
+    return view('settingprofile');
+});
+Route::get('/settingprofileadmin', function () {
+    return view('settingprofileadmin');
+});
+Route::get('/test1', function () {
+    return view('test1');
 });

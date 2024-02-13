@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--LOGO WEB ICON-->
+    <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
     <title>Informasi Pengaduan</title>
     <!--Script -->
@@ -66,6 +69,17 @@
             padding: 20px;
             margin-top: 20px;
         }
+
+        /* New styles */
+        .profile-dropdown {
+            margin-right: 100px;
+            margin-left: auto;
+            margin-top: 18px;
+        }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
     </style>
 </head>
 
@@ -83,36 +97,46 @@
                         <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
+                        <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/tatacara">Tata Cara</a>
                     </li>
                 </ul>
-                <!-- Log Out Link (Moved to the right) -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="btn btn-danger" href="/login">
-                            <i class="fas fa-sign-out-alt"></i> Log Out
-                        </a>
-                    </li>
-                </ul>
+                <!--PROFILE DROPDOWN-->
+                <div class="dropdown pb-4 profile-dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
+                        <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
+                            <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
+                        <li><a class="dropdown-item" href="/login">Log out</a></li>
+                        <li><a class="dropdown-item" href="/settingprofile">Setting Profile</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+    </nav>
     </nav>
     <!--ISI -->
     <div class="header-text text-center">Informasi Pengaduan</div>
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5"></div>
-    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5"></div>
-    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5"></div>
 
 
 
-    <!--Navigator Bottom-->
+    <!--FOOTER NAVIGATOR BOTTOM-->
     <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
-        ETICKET &copy; 2024
+        <i class="fas fa-phone-alt">E-TICKET 2024</i>
+    </div>
 
     </div>
+    <script>
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("show");
+        }
+    </script>
+    </section>
 </body>
 
 </html>

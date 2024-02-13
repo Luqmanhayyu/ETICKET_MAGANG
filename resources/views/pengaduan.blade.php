@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <!--LOGO WEB ICON-->
+    <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
+    <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
     <title>Halaman Pengaduan</title>
     <!--STYLE CSS/BOOSTRAP-->
@@ -92,6 +95,17 @@
             font-size: 14px;
             padding: 8px;
         }
+
+        /* New styles */
+        .profile-dropdown {
+            margin-right: 100px;
+            margin-left: auto;
+            margin-top: 18px;
+        }
+
+        .nav-link:hover {
+            color: #007bff !important;
+        }
     </style>
 </head>
 
@@ -109,22 +123,23 @@
                         <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/informasi">Informasi</a>
                     </li>
                 </ul>
-                <!--BUTTON LOG OUT-->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="btn btn-danger" href="/login">
-                            <i class="fas fa-sign-out-alt"></i> Log Out
-                        </a>
-                    </li>
-                </ul>
+                <!--PROFILE DROPDOWN-->
+                <div class="dropdown pb-4 profile-dropdown">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
+                        <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
+                            <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
+                        <li><a class="dropdown-item" href="/login">Log out</a></li>
+                        <li><a class="dropdown-item" href="/settingprofile">Setting Profile</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
+    </nav>
     </nav>
     <!--ISI  HALAMAN-->
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
@@ -138,16 +153,15 @@
                         <input type="text" class="form-control" id="nama" name="nama" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
                         <label for="noTelp" class="form-label">Nomor Telepon</label>
                         <input type="tel" class="form-control" id="noTelp" name="noTelp" required>
                     </div>
                     <div class="mb-3">
-                        <label for="alamat" class="form-label">Alamat</label>
-                        <textarea class="form-control" id="alamat" name="alamat" rows="3" required></textarea>
+                        <label for="Kodepengaduan" class="form-label">Kode Pengaduan</label>
+                        <select class="form-select" id="Kodepengaduan" name="Kodepengaduan" required>
+                            <option value="umum">Umum</option>
+                            <option value="not_umum">not Umum</option>
+                        </select>
                     </div>
 
                     <h2>Kategori</h2>
@@ -175,9 +189,9 @@
         </div>
     </div>
 
-    <!--NAVIGATOR BOTTOM-->
-    <div class="bottomvavbar text-center pt-5 pb-5" style="color: white;">
-        ETICKET &copy; 2024
+    <!--FOOTER NAVIGATOR BOTTOM-->
+    <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+        <i class="fas fa-phone-alt">E-TICKET 2024</i>
     </div>
 
     <!--SCRIPT  POP UP PENGEDUAN-->
@@ -185,7 +199,18 @@
         function onKirim() {
             alert("Pesan telah dikirim!");
         }
+
+        function toggleDropdown() {
+            var dropdownMenu = document.getElementById("dropdownMenu");
+            dropdownMenu.classList.toggle("show");
+        }
+
+        function onKirim() {
+            alert("Pengadaduan Berhasil Di Kirim");
+        }
     </script>
+    </section>
+
 </body>
 
 </html>
