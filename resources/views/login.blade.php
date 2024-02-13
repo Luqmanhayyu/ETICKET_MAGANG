@@ -101,7 +101,7 @@
                         <span style="color: hsl(218, 81%, 75%)">Aduan Dan Layanan</span>
                     </h1>
                     <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
-                        "Komitmen kamii terhadap resolusi cepat dan efektif terhadap setiap pengaduan E-TICKET.
+                        "Komitmen kami terhadap resolusi cepat dan efektif terhadap setiap pengaduan E-TICKET.
                         Setiap laporan menjadi kesempatan bagi kami untuk memperbaiki dan memberikan layanan terbaik."
                     </p>
                 </div>
