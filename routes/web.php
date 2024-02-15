@@ -15,63 +15,64 @@ use App\Http\Controllers\LoginController;
 |
 */
 
+//(1) ROUTE LOGIN
 Route::get('login', [LoginController::class, 'login'])->name('login');
 Route::post('login/actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 Route::get('home', [LoginController::class, 'index'])->name('home')->middleware('auth');
 Route::get('login/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 
-Route::get('/login', function () {
-    return view('login');
+Route::get('/', function () {
+    return view('login'); //HALAMAN LOGIN
 });
 Route::get('/registrasi', function () {
-    return view('registrasi');
+    return view('registrasi'); //REGISTER
 });
 Route::get('/halaman', function () {
-    return view('halaman');
+    return view('halaman'); //HALAMAN UTAMA
 });
 Route::get('/pengaduan', function () {
-    return view('pengaduan');
+    return view('pengaduan'); //HALAMAN PENGADUAN
 });
 Route::get('/cekpengaduan', function () {
-    return view('cekpengaduan');
+    return view('cekpengaduan'); // HALAMAN CEK PENGADUAN
 });
 Route::get('/informasi', function () {
-    return view('informasi');
+    return view('informasi'); // HALAMAN INFORMASI
 });
 Route::get('/tatacara', function () {
-    return view('tatacara');
+    return view('tatacara'); // HALAMAN TATACARA
 });
 Route::get('/tentangkami', function () {
-    return view('tentangkami');
+    return view('tentangkami'); //HALAMAN TENTANG KAMI LOGIN
 });
 Route::get('/tentangkami1', function () {
-    return view('tentangkami1');
+    return view('tentangkami1'); //HALAMAN TENTANG KAMI TANPA LOGIN
 });
 Route::get('/menu', function () {
-    return view('menu');
+    return view('menu'); //HALAMAN MENU
 });
 Route::get('/admindashboard', function () {
-    return view('admindashboard');
+    return view('admindashboard'); //HALAMAN ADMIN DASHBOARD
 });
 Route::get('/cekadmin', function () {
-    return view('cekadmin');
+    return view('cekadmin'); //HALAMAN CEK ADMIN
 });
 Route::get('/adminpengaduan', function () {
-    return view('adminpengaduan');
+    return view('adminpengaduan'); //HALAMAN CEK PENGADUAN ADMIN
 });
 Route::get('/jawabadmin', function () {
-    return view('jawabadmin');
+    return view('jawabadmin'); //HALAMAN JAWAB PENGADUAN ADMIN
 });
 Route::get('/loginadmin', function () {
-    return view('loginadmin');
+    return view('loginadmin'); //HALAMAN LOGIN ADMIN
 });
 Route::get('/settingprofile', function () {
-    return view('settingprofile');
+    return view('settingprofile'); //HALAMAN SETTING PROFILE USER
 });
 Route::get('/settingprofileadmin', function () {
-    return view('settingprofileadmin');
+    return view('settingprofileadmin'); //HALAMAN SETTING PROFILE ADMIN
 });
 Route::get('/test1', function () {
-    return view('test1');
+    return view('test1'); //TEST HALAMAN KODING
 });

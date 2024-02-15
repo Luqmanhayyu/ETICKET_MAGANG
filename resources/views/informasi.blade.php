@@ -10,8 +10,9 @@
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
     <title>Informasi Pengaduan</title>
-    <!--Script -->
+    <!--SCRIPT CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <!--STYLE CSS-->
     <style>
         body {
             overflow: hidden;
@@ -70,7 +71,6 @@
             margin-top: 20px;
         }
 
-        /* New styles */
         .profile-dropdown {
             margin-right: 100px;
             margin-left: auto;
@@ -130,6 +130,7 @@
     </div>
 
     </div>
+    <!--SCRIPT DROPDOWN MENU-->
     <script>
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");

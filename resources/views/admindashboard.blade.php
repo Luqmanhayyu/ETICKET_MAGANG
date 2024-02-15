@@ -8,6 +8,9 @@
     <link rel="icon" href="/assets/logo-bpkad.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js">
+    <!--TITLE-->
+    <title>Admin Dashboard</title>
+    <!--STYLE CSS-->
     <style>
         body {
             background-color: #f8f9fa;
@@ -55,7 +58,6 @@
             float: right;
         }
 
-        /* Adjustments for small screens */
         @media (max-width: 768px) {
 
             .chart-container,
@@ -65,6 +67,7 @@
         }
     </style>
 </head>
+<!--SIDEBAR-->
 
 <body>
     <div class="container-fluid">
@@ -104,6 +107,7 @@
                                 <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
                         </li>
                     </ul>
+                    <!--PROFIL ADMIN-->
                     <hr style="border-color: #5a6268;">
                     <div class="dropdown pb-4">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,6 +121,7 @@
                     </div>
                 </div>
             </div>
+            <!--ISI HALAMAN-->
             <div class="col-9 py-3">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col-md-4">
@@ -153,6 +158,7 @@
             </div>
         </div>
     </div>
+    <!--SCRIPT CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

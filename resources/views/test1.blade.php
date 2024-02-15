@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tata Cara</title>
-    <!-- Link CDN untuk Animate on Scroll Library -->
+    <!-- Link CDN AOS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <!-- Link CDN untuk Bootstrap CSS -->
+    <!-- Link CDN BOOSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!--STYLE CSS-->
     <style>
-        /* Tambahkan gaya CSS khusus jika diperlukan */
         .background-radial-gradient {
             background-color: hsl(218, 41%, 15%);
             background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);
@@ -49,7 +48,6 @@
             color: #007bff !important;
         }
 
-        /* Tambahan gaya CSS dari kode kedua */
         .bg-glass {
             background-color: rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(4px);
@@ -58,7 +56,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <img src="assets/logo bpkad.png" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
@@ -77,7 +75,7 @@
                         <a class="nav-link active" aria-current="page" href="/tatacara">Tata Cara</a>
                     </li>
                 </ul>
-                <!-- Profile Dropdown -->
+                <!--PROFILE DROPDOWN-->
                 <div class="dropdown pb-4 profile-dropdown">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
                         <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
@@ -93,11 +91,11 @@
         </div>
     </nav>
 
-    <!-- Konten Tata Cara -->
+    <!--HALAMAN ISI-->
     <section id="tata-cara" class="background-radial-gradient overflow-hidden">
         <div class="container">
             <!-- 
-    <!-- CARD 1 -->
+    <!--CARD1-->
             <div class="container px-2 py-2 px-md-2 text-center text-lg-start my-5">
                 <div class="row gx-lg-4 align-items-center mb-5" data-aos="fade-up">
                     <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10" data-aos="fade-right">
@@ -124,7 +122,7 @@
                 </div>
             </div>
 
-            <!-- CARD 2 -->
+            <!--CARD2-->
             <div class="container px-2 py-2 px-md-2 text-center text-lg-start my-5">
                 <div class="row gx-lg-4 align-items-center mb-5" data-aos="fade-up">
                     <div class="col-lg-6 mb-5 mb-lg-0 position-relative" data-aos="fade-right">
@@ -151,7 +149,7 @@
                 </div>
             </div>
 
-            <!-- CARD 3 -->
+            <!--CARD3-->
             <div class="container px-2 py-2 px-md-2 text-center text-lg-start my-5">
                 <div class="row gx-lg-4 align-items-center mb-5" data-aos="fade-up">
                     <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10" data-aos="fade-right">
@@ -180,9 +178,10 @@
     </section>
 
 
-    <!-- Script JavaScript untuk Bootstrap dan Animate on Scroll Library -->
+    <!--SCRIPT CDN AOS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!--SCRIPT DROPDOWN -->
     <script>
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");

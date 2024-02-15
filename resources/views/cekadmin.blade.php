@@ -13,7 +13,7 @@
     <!--TITLE-->
     <title>Cek Admin Pengaduan</title>
 </head>
-<!--STYLE CSS/BOOSTRAP-->
+<!--STYLE CSS-->
 <style>
     body,
     html {
@@ -60,6 +60,7 @@
     }
 </style>
 
+<!--SIDEBAR-->
 
 <body style="background-color: #f8f9fa;">
 

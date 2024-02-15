@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TITLE-->
     <title>Tata Cara</title>
-    <!-- Link CDN untuk Animate on Scroll Library -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <!-- Link CDN untuk Bootstrap CSS -->
+    <!--SCRIPT CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!--STYLE CSS-->
     <style>
         /* Tambahkan gaya CSS khusus jika diperlukan */
         .background-radial-gradient {
@@ -49,7 +49,6 @@
             color: #007bff !important;
         }
 
-        /* Tambahan gaya CSS dari kode kedua */
         .bg-glass {
             background-color: rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(4px);
@@ -58,7 +57,7 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <img src="assets/logo bpkad.png" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
@@ -74,7 +73,7 @@
                         <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
                     </li>
                 </ul>
-                <!-- Profile Dropdown -->
+                <!--PROFILE DROPDOWN-->
                 <div class="dropdown pb-4 profile-dropdown">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
                         <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
@@ -90,7 +89,7 @@
         </div>
     </nav>
 
-    <!-- Konten Tata Cara -->
+    <!--HALAMAN ISI-->
     <section id="tata-cara" class="background-radial-gradient overflow-hidden">
         <div class="container">
             <!-- 
@@ -177,9 +176,10 @@
     </section>
 
 
-    <!-- Script JavaScript untuk Bootstrap dan Animate on Scroll Library -->
+    <!--SCRIPT AOS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!--SCRIPT DROPWON -->
     <script>
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");

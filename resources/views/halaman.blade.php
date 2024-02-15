@@ -7,16 +7,15 @@
     <!--LOGO WEB ICON-->
     <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
-    <!-- Link CDN -->
+    <!--SCRIPT CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-sOME53wYWEFqXq8iZAkY0JP7eOzmm5CFwDFq8OtABy8uPf/7a9l+IoQ5GZhZV6wSiISdqVvNbkHyi8eWfUTiJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pVlZr+i1I/y3z5DpKiLZYsbgFOf0PeCxpoExPZFiujmaGegVyKS0Mopx9VYSX8HT4h6nGc9SUxnZMNDtk3Ho/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--TITLE -->
     <title>Halaman</title>
 
-    <!-- AOS Library CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
+    <!--STYLE CSS-->
     <style>
         .background-radial-gradient {
             background-color: hsl(218, 41%, 15%);
@@ -70,7 +69,6 @@
             color: #007bff !important;
         }
 
-        /* Media Queries */
         @media (max-width: 992px) {
             .profile-dropdown {
                 margin-right: 0.5rem;
@@ -111,7 +109,6 @@
 </head>
 
 <body>
-    <!--STYLE CSS/BOOSTRAP-->
     <section class="background-radial-gradient overflow-hidden">
         <!--NAVBAR-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -215,13 +212,14 @@
             </div>
         </div>
     </section>
-    <!-- AOS Library Script -->
+    <!-- AOS LIBARARY SCRIPT-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
-    <!-- Dropdown Script -->
+    <!--SCRIPT DROPDOWN MENU-->
     <script>
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");

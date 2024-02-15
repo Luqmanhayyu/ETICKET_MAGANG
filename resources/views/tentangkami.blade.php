@@ -12,12 +12,12 @@
     <title>Tentang Kami</title>
     <!--SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
-    <!-- Anime.js Library -->
+    <!-- LINK CDN AOS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
 <body style="overflow: hidden;">
-    <!--STYLE CSS/BOOSTRAP-->
+    <!--STYLE CSS-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
             .body {
@@ -68,7 +68,7 @@
                 position: relative;
                 overflow: hidden;
                 height: 200px;
-                /* Sesuaikan tinggi gambar */
+
             }
 
             .card-img-box img {
@@ -143,10 +143,8 @@
         <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
             <i class="fas fa-phone-alt">E-TICKET 2024</i>
         </div>
-
-        <!-- Script untuk Anime.js -->
+        <!--SCRIPT AOS ANIMATE JS -->
         <script>
-            // Animasi fade in untuk judul
             anime({
                 targets: '#fade-in',
                 opacity: [0, 1],
@@ -154,7 +152,6 @@
                 easing: 'easeInOutQuad',
             });
 
-            // Animasi slide up untuk paragraf
             anime({
                 targets: '#slide-up',
                 translateY: [50, 0],
@@ -164,7 +161,7 @@
                 delay: 300,
             });
 
-            // Animasi fade in up untuk card
+
             anime({
                 targets: '#fade-in-up',
                 translateY: [50, 0],

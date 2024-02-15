@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!--SCRIPT-->
+    <!--SCRIPT CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <meta charset="utf-8">
@@ -14,7 +14,7 @@
     <title>Admin Pengaduan</title>
 </head>
 
-<!--STYLE CSS/BOOSTRAP-->
+<!--STYLE CSS-->
 <style>
     body,
     html {
@@ -61,9 +61,9 @@
     }
 </style>
 
+<!--SIDEBAR-->
 
 <body style="background-color: #f8f9fa;">
-
     <div class="container-fluid">
         <div class="row flex-nowrap">
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
@@ -108,6 +108,7 @@
                                 <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
                         </li>
                     </ul>
+                    <!--PROFILE USER-->
                     <hr style="border-color: #343a40;">
                     <div class="dropdown pb-4">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">

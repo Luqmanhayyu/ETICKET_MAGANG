@@ -13,7 +13,7 @@
     <!--TITLE-->
     <title>Jawab Admin</title>
 </head>
-<!--STYLE CSS/BOOSTRAP-->
+<!--STYLE CSS-->
 <style>
     body,
     html {
@@ -104,6 +104,7 @@
                                 <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
                         </li>
                     </ul>
+                    <!--PROFILE USER-->
                     <hr style="border-color: #343a40;">
                     <div class="dropdown pb-4">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">

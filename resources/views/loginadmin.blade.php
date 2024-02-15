@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <!-- STYLE CSS/BOOSTRAP -->
+    <!--STYLE CSS-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
             .body {

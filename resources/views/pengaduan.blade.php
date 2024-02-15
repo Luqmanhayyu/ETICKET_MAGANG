@@ -194,7 +194,7 @@
         <i class="fas fa-phone-alt">E-TICKET 2024</i>
     </div>
 
-    <!--SCRIPT  POP UP PENGEDUAN-->
+    <!--SCRIPT  POP UP DAN DROPDOWN MENU-->
     <script>
         function onKirim() {
             alert("Pesan telah dikirim!");

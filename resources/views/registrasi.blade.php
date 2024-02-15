@@ -16,12 +16,12 @@
     <title>
         Registrasi User
     </title>
-    <!--Script CDN for Google reCAPTCHA-->
+    <!--Script CDN CAPTCHA-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body style="overflow: hidden;">
-    <!-- STYLE CSS/BOOSTRAP -->
+    <!-- STYLE CSS-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
             .body {
@@ -154,8 +154,9 @@
             <i class="fab fa-instagram"></i> Instagram | E-TICKET 2024
         </div>
     </section>
-    <!--Script CDN-->
+    <!--SCRIPT CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <!--SCRIPT POP UP-->
     <script>
         function onKirim() {
             alert("Acount Berhasil Dibuat");

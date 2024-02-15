@@ -13,6 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--TITLE -->
     <title>Setting Profile Admin</title>
+    <!--STYLE CSS-->
     <style>
         .background-radial-gradient {
             background-color: hsl(218, 41%, 15%);
@@ -41,7 +42,6 @@
             color: #fff;
             border-radius: 10px 10px 0 0;
             position: relative;
-            /* Tambahkan */
         }
 
         .profile-image {
@@ -71,7 +71,6 @@
             margin-top: 10px;
         }
 
-        /* Perubahan untuk memperkecil ukuran card form setting */
         @media (min-width: 576px) {
             .card {
                 margin-top: 50px;
@@ -171,6 +170,7 @@
             <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
                 <i class="fas fa-phone-alt">E-TICKET 2024</i>
             </div>
+            <!--SCRIPT DROPDOWN DAN POP UP-->
             <script>
                 function toggleDropdown() {
                     var dropdownMenu = document.getElementById("dropdownMenu");
@@ -182,7 +182,7 @@
                 }
 
                 function closeSettingProfile() {
-                    // Fungsi untuk menutup pengaturan profil
+
                 }
             </script>
         </div>
