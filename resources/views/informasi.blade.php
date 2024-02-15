@@ -122,8 +122,6 @@
     <div class="header-text text-center">Informasi Pengaduan</div>
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5"></div>
 
-
-
     <!--FOOTER NAVIGATOR BOTTOM-->
     <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
         <i class="fas fa-phone-alt">E-TICKET 2024</i>
