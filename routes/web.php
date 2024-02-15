@@ -22,8 +22,8 @@ Route::get('home', [LoginController::class, 'index'])->name('home')->middleware(
 Route::get('login/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 
-Route::get('/', function () {
-    return view('login'); //HALAMAN LOGIN
+Route::get('/login', function () {
+    return view('login');
 });
 Route::get('/registrasi', function () {
     return view('registrasi'); //REGISTER
