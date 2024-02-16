@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js">
     <!--TITLE-->
-    <title>Admin Dashboard</title>
+    <title>E-TICKET</title>
     <!--STYLE CSS-->
     <style>
         body {
@@ -101,10 +101,6 @@
                                     <a href="#" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Product</span> 2</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link px-0 align-middle text-light">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
                         </li>
                     </ul>
                     <!--PROFIL ADMIN-->

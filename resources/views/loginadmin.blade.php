@@ -17,7 +17,7 @@
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE -->
     <title>
-        Login Admin
+        E-TICKET
     </title>
 
 </head>
@@ -132,8 +132,11 @@
                                     <!--BUTTON LOGIN-->
                                     <button type="button" class="btn btn-primary" onclick="onKirim()">Login</button>
                                     <script>
-                                        function redirectToHalaman() {
-                                            window.location.href = '/halaman';
+                                        function onKirim() {
+                                            alert("Berhasil Login");
+                                            setTimeout(function() {
+                                                window.location.href = '/admindashboard';
+                                            }, 1000);
                                         }
                                     </script>
 
@@ -150,11 +153,12 @@
         </div>
 
         </div>
-        <!--SCRIPT POP UP-->
         <script>
             function onKirim() {
                 alert("Berhasil Login");
-
+                setTimeout(function() {
+                    window.location.href = '/admindashboard';
+                }, 1000);
             }
         </script>
 </body>

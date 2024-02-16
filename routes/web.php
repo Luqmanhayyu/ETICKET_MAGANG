@@ -22,7 +22,7 @@ Route::get('home', [LoginController::class, 'index'])->name('home')->middleware(
 Route::get('login/actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth');
 
 
-Route::get('/login', function () {
+Route::get('/', function () {
     return view('login');
 });
 Route::get('/registrasi', function () {
@@ -72,7 +72,4 @@ Route::get('/settingprofile', function () {
 });
 Route::get('/settingprofileadmin', function () {
     return view('settingprofileadmin'); //HALAMAN SETTING PROFILE ADMIN
-});
-Route::get('/test1', function () {
-    return view('test1'); //TEST HALAMAN KODING
 });

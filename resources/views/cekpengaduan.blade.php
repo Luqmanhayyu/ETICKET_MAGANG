@@ -11,7 +11,7 @@
     <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE -->
-    <title>Cek Aduan Ticket</title>
+    <title>E-TICKET</title>
     <!--STYLE CSS-->
     <style>
         body {

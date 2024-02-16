@@ -9,7 +9,7 @@
     <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
-    <title>Tentang Kami</title>
+    <title>E-TICKET</title>
     <!--SCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
     <!-- Anime.js Library -->

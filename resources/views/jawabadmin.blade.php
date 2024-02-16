@@ -11,7 +11,7 @@
     <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
-    <title>Jawab Admin</title>
+    <title>E-TICKET</title>
 </head>
 <!--STYLE CSS-->
 <style>
@@ -100,9 +100,6 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 align-middle text-light">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Customers</span> </a>
-                        </li>
                     </ul>
                     <!--PROFILE USER-->
                     <hr style="border-color: #343a40;">

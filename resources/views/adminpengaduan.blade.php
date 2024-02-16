@@ -11,7 +11,7 @@
     <link rel="icon" href="/assets/logo bpkad.png" type="image/png">
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
-    <title>Admin Pengaduan</title>
+    <title>E-TICKET</title>
 </head>
 
 <!--STYLE CSS-->

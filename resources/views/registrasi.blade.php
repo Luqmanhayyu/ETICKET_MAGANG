@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE -->
     <title>
-        Registrasi User
+        E-TICKET
     </title>
     <!--Script CDN CAPTCHA-->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
