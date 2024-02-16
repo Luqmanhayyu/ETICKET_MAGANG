@@ -113,6 +113,7 @@
                         <!--LOG OUT-->
                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                             <li><a class="dropdown-item" href="/loginadmin">Log out</a></li>
+                            <li><a class="dropdown-item" href="/settingprofileadmin">Setting Profile</a></li>
                         </ul>
                     </div>
                 </div>
