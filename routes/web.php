@@ -38,7 +38,10 @@ Route::get('/cekpengaduan', function () {
     return view('cekpengaduan'); // HALAMAN CEK PENGADUAN
 });
 Route::get('/informasi', function () {
-    return view('informasi'); // HALAMAN INFORMASI
+    return view('informasi'); // HALAMAN INFORMASI TANPA LOGIN
+});
+Route::get('/halamaninformasi', function () {
+    return view('halamaninformasi'); // HALAMAN INFORMASI DENGAN LOGIN
 });
 Route::get('/tatacara', function () {
     return view('tatacara'); // HALAMAN TATACARA

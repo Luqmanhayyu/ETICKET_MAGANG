@@ -90,10 +90,10 @@
                         <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
+                        <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/informasi">Informasi</a>
+                        <a class="nav-link active" aria-current="page" href="/halamaninformasi">Informasi</a>
                     </li>
                 </ul>
             </div>

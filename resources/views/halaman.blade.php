@@ -123,7 +123,7 @@
                             <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/informasi">Informasi</a>
+                            <a class="nav-link active" aria-current="page" href="/halamaninformasi">Informasi</a>
                         </li>
                     </ul>
                 </div>
@@ -201,7 +201,7 @@
                         <img src="assets/informasi.png" class="card-img-top" alt="..." style="height:200px">
                         <div class="card-body">
                             <p class="card-text">Tata Cara</p>
-                            <a href="/tatacara" class="btn btn-primary">Click Disini</a>
+                            <a href="/halamaninformasi" class="btn btn-primary">Click Disini</a>
                         </div>
                     </div>
                 </div>
