@@ -71,7 +71,7 @@
                     <!--LOGO BPKAD-->
                     <img src="assets/logo bpkad.png" alt="Logo BPKAD" width="120" height="60">
                     </a>
-                    <!--GARIS PEMISAH-->
+                    <!--GARIS PEMISAH SIDE BAR-->
                     <hr style="border-color: #343a40; width: 80%;">
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <!--SIDEBAR-->

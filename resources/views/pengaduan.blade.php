@@ -125,6 +125,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/halamaninformasi">Informasi</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
+                    </li>
                 </ul>
                 <!--PROFILE DROPDOWN-->
                 <div class="dropdown pb-4 profile-dropdown">

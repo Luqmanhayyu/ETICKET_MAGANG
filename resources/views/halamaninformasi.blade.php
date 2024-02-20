@@ -137,6 +137,7 @@
                     <li><a class="dropdown-item" href="/settingprofile">Setting Profile</a></li>
                 </ul>
             </div>
+        </nav>
 
         </nav>
 
@@ -205,6 +206,15 @@
                 delay: 500,
             });
         </script>
+
+        <!--SCRIPT DROPDOWN MENU PROFILE-->
+        <script>
+            function toggleDropdown() {
+                var dropdownMenu = document.getElementById("dropdownMenu");
+                dropdownMenu.classList.toggle("show");
+            }
+        </script>
 </body>
+
 
 </html>

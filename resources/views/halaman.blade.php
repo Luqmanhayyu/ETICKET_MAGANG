@@ -219,7 +219,7 @@
         AOS.init();
     </script>
 
-    <!--SCRIPT DROPDOWN MENU-->
+    <!--SCRIPT DROPDOWN MENU PROFILE-->
     <script>
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");

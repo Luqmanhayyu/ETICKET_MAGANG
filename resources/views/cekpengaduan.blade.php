@@ -131,7 +131,7 @@
     <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
         <i class="fas fa-phone-alt">E-TICKET 2024</i>
     </div>
-    <!--SCRIPT-->
+    <!--SCRIPT DROPDOWN MENU PROFILE-->
     <script>
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");
