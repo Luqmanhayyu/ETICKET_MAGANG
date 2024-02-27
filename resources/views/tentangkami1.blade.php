@@ -24,6 +24,34 @@
                 overflow: hidden;
             }
 
+            .profile-dropdown {
+                margin-right: 20px;
+            }
+
+            @media (max-width: 992px) {
+                .profile-dropdown {
+                    margin-right: 0.5rem;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .profile-dropdown {
+                    margin-right: 0.2rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .profile-dropdown {
+                    margin-right: 0;
+                }
+            }
+
+            .profile-dropdown {
+                margin-right: 100px;
+                margin-left: 0;
+                margin-top: 18px;
+            }
+
             .background-radial-gradient {
                 background-color: hsl(218, 41%, 15%);
                 background-image: radial-gradient(650px circle at 0% 0%,
@@ -99,6 +127,19 @@
                     </ul>
 
                 </div>
+            </div>
+            <!--PROFILE DROPDOWN-->
+            <div class="dropdown pb-4 profile-dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
+                    <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
+                        <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
+                    </div>
+                    <span class="profile-name">John Doe</span> <!-- Tambahkan nama disini -->
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
+                    <li><a class="dropdown-item" href="/login">Log out</a></li>
+
+                </ul>
             </div>
         </nav>
 

@@ -106,7 +106,7 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
                     <li><a class="dropdown-item" href="/login">Log out</a></li>
-                    <li><a class="dropdown-item" href="/settingprofile">Setting Profile</a></li>
+
                 </ul>
             </div>
         </div>

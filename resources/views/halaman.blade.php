@@ -105,6 +105,52 @@
                 width: 70px;
             }
         }
+
+        /* Added media query for smaller screens */
+        @media (max-width: 575px) {
+            .navbar-collapse {
+                background-color: hsl(218, 41%, 15%);
+            }
+
+            .navbar-nav {
+                margin-top: 20px;
+            }
+
+            .dropdown {
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+
+            .profile-dropdown {
+                margin-right: 20px;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+
+            .bottomnavbar {
+                margin-top: 20px;
+            }
+
+            .navbar-brand img {
+                width: 60px;
+                height: auto;
+            }
+
+            .display-5 {
+                font-size: 2rem;
+            }
+
+            .card-body {
+                padding: 10px;
+            }
+
+            .btn-primary {
+                padding: 5px 10px;
+                font-size: 12px;
+            }
+        }
     </style>
 </head>
 
@@ -137,7 +183,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
                         <li><a class="dropdown-item" href="/login">Log out</a></li>
-                        <li><a class="dropdown-item" href="/settingprofile">Setting Profile</a></li>
+
                     </ul>
                 </div>
         </nav>
