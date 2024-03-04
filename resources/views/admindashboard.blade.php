@@ -10,62 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js">
     <!--TITLE-->
     <title>E-TICKET</title>
-    <!--STYLE CSS-->
-    <style>
-        body {
-            background-color: #f8f9fa;
-            overflow-x: hidden;
-        }
-
-        .card {
-            border: none;
-            transition: transform 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .nav-link:hover {
-            color: #007bff !important;
-        }
-
-        .bg-dark {
-            background-color: hsl(218, 41%, 15%);
-            background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 19%) 80%, transparent 10%),
-                radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 20%) 75%, transparent 10%);
-        }
-
-        .bg-glass {
-            background-color: rgba(255, 255, 255, 0.9) !important;
-            backdrop-filter: saturate(200%) blur(25px);
-        }
-
-        .chart-container {
-            width: 100%;
-            max-width: 400px;
-            margin: auto;
-            margin-top: 20px;
-            float: left;
-        }
-
-        .line-chart-container {
-            width: 100%;
-            max-width: 400px;
-            margin: auto;
-            margin-top: 20px;
-            float: right;
-        }
-
-        @media (max-width: 768px) {
-
-            .chart-container,
-            .line-chart-container {
-                max-width: none;
-            }
-        }
-    </style>
 </head>
 <!--SIDE BAR-->
 @include('sidebar.sidebar')
