@@ -1,0 +1,416 @@
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+}
+
+#radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+}
+
+.img-fluid {
+    border-radius: 0px;
+    margin-top: 0px;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+.profile-dropdown {
+    margin-right: 100px;
+    margin-left: 0;
+    margin-top: 18px;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+@media (max-width: 992px) {
+    .profile-dropdown {
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-dropdown {
+        margin-right: 0.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-dropdown {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+}
+
+/* Added media query for smaller screens */
+@media (max-width: 575px) {
+    .navbar-collapse {
+        background-color: hsl(218, 41%, 15%);
+    }
+
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .dropdown {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .profile-dropdown {
+        margin-right: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .bottomnavbar {
+        margin-top: 20px;
+    }
+
+    .navbar-brand img {
+        width: 60px;
+        height: auto;
+    }
+
+    .display-5 {
+        font-size: 2rem;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .btn-primary {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: hsl(218, 41%, 15%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+                hsl(218, 41%, 35%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+                hsl(218, 41%, 45%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-primary:active {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+    .btn-primary:hover {
+        background-color: #ad1fff;
+        border-color: #ad1fff;
+    }
+
+    .btn-primary:focus {
+        background-color: #ad1fff;
+        border-color: #ad1fff;
+        box-shadow: 0 0 0 0.25rem rgba(173, 31, 255, 0.5);
+    }
+
+    .btn-primary:active {
+        background-color: #44006b;
+        border-color: #44006b;
+    }
+
+    .text-white {
+        color: white !important;
+    }
+
+    /* Adjusted styles for a smaller form card */
+    .card {
+        border: none;
+        background: none;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* New styles */
+    .profile-dropdown {
+        margin-right: 100px;
+        margin-left: auto;
+        margin-top: 18px;
+    }
+
+    .nav-link:hover {
+        color: #007bff !important;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #141e30, #243b55);
+    }
+
+    .container {
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-primary:active,
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-color: #6c5ce7;
+        border-color: #6c5ce7;
+    }
+
+    .text-white {
+        color: white !important;
+    }
+
+    .header-text {
+        padding: 20px;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .header-text::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+        height: 3px;
+        background-color: #6c5ce7;
+        margin-top: 10px;
+    }
+
+    .bottom-navbar {
+        background-color: #6c5ce7;
+        color: white;
+        padding: 10px;
+    }
+
+    .profile-dropdown {
+        margin-right: 100px;
+        margin-left: auto;
+        margin-top: 18px;
+    } .body {
+        overflow: hidden;
+    }
+
+    .background-radial-gradient {
+        background-color: hsl(218, 41%, 15%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+                hsl(218, 41%, 35%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+                hsl(218, 41%, 45%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%);
+    }
+
+    .profile-dropdown {
+        margin-right: 100px;
+        margin-left: 0;
+        margin-top: 18px;
+    }
+
+    @media (max-width: 992px) {
+        .profile-dropdown {
+            margin-right: 0.5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .profile-dropdown {
+            margin-right: 0.2rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .profile-dropdown {
+            margin-right: 0;
+        }
+    }
+
+    #radius-shape-1 {
+        height: 220px;
+        width: 220px;
+        top: 249px;
+        left: -140px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+    }
+
+    #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+    }
+
+    .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+    }
+
+    .card-img-box {
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+
+    }
+
+    .card-img-box img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-link:hover {
+        color: #007bff !important;
+    }   .body {
+        overflow: hidden;
+    }
+
+    .background-radial-gradient {
+        background-color: hsl(218, 41%, 15%);
+        background-image: radial-gradient(650px circle at 0% 0%,
+                hsl(218, 41%, 35%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+                hsl(218, 41%, 45%) 15%,
+                hsl(218, 41%, 30%) 35%,
+                hsl(218, 41%, 20%) 75%,
+                hsl(218, 41%, 19%) 80%,
+                transparent 100%);
+    }
+
+    #radius-shape-2 {
+        border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+        bottom: -60px;
+        right: -110px;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(#44006b, #ad1fff);
+        overflow: hidden;
+    }
+
+    .bg-glass {
+        background-color: hsla(0, 0%, 100%, 0.9) !important;
+        backdrop-filter: saturate(200%) blur(25px);
+    }
+
+    .card-img-box {
+        position: relative;
+        overflow: hidden;
+        height: 200px;
+        /* Sesuaikan tinggi gambar */
+    }
+
+    .card-img-box img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-link:hover {
+        color: #007bff !important;
+    }

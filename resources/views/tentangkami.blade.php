@@ -139,10 +139,8 @@
         </section>
 
 
-        <!--FOOTER NAVIGATOR BOTTOM-->
-        <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
-            <i class="fas fa-phone-alt">E-TICKET 2024</i>
-        </div>
+        <!--FOOTER-->
+        @include('footer.footer')
         <!--SCRIPT AOS ANIMATE JS -->
         <script>
             anime({

@@ -15,7 +15,6 @@
     <!--STYLE CSS-->
     <style>
         body {
-            overflow: hidden;
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, #141e30, #243b55);
@@ -78,40 +77,8 @@
 
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="assets/logo bpkad.png" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/halamaninformasi">Informasi</a>
-                    </li>
-                </ul>
-            </div>
-            <!--PROFILE DROPDOWN-->
-            <div class="dropdown pb-4 profile-dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
-                    <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
-                        <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
-                    </div>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
-                    <li><a class="dropdown-item" href="/login">Log out</a></li>
+    @include('navbar.navbar')
 
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </nav>
     <!--ISI HALAMAN-->
     <div class="header-text text-center">Cek Ajuan Ticket</div>
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">

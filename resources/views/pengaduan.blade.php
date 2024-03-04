@@ -12,138 +12,12 @@
     <link rel="shortcut icon" href="/assets/logo bpkad.png" type="image/png">
     <!--TITLE-->
     <title>E-TICKET</title>
-    <!--STYLE CSS/BOOSTRAP-->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: hsl(218, 41%, 15%);
-            background-image: radial-gradient(650px circle at 0% 0%,
-                    hsl(218, 41%, 35%) 15%,
-                    hsl(218, 41%, 30%) 35%,
-                    hsl(218, 41%, 20%) 75%,
-                    hsl(218, 41%, 19%) 80%,
-                    transparent 100%),
-                radial-gradient(1250px circle at 100% 100%,
-                    hsl(218, 41%, 45%) 15%,
-                    hsl(218, 41%, 30%) 35%,
-                    hsl(218, 41%, 20%) 75%,
-                    hsl(218, 41%, 19%) 80%,
-                    transparent 100%);
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .container {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-
-        .form-control {
-            background-color: rgba(255, 255, 255, 0.9);
-        }
-
-        .btn-primary:active {
-            background-color: #0056b3;
-            border-color: #0056b3;
-        }
-
-        .btn-primary:hover {
-            background-color: #ad1fff;
-            border-color: #ad1fff;
-        }
-
-        .btn-primary:focus {
-            background-color: #ad1fff;
-            border-color: #ad1fff;
-            box-shadow: 0 0 0 0.25rem rgba(173, 31, 255, 0.5);
-        }
-
-        .btn-primary:active {
-            background-color: #44006b;
-            border-color: #44006b;
-        }
-
-        .text-white {
-            color: white !important;
-        }
-
-        /* Adjusted styles for a smaller form card */
-        .card {
-            border: none;
-            background: none;
-        }
-
-        .card-body {
-            padding: 10px;
-        }
-
-        .form-label {
-            font-size: 14px;
-        }
-
-        .form-control {
-            padding: 8px;
-            font-size: 14px;
-        }
-
-        .btn-primary {
-            font-size: 14px;
-            padding: 8px;
-        }
-
-        /* New styles */
-        .profile-dropdown {
-            margin-right: 100px;
-            margin-left: auto;
-            margin-top: 18px;
-        }
-
-        .nav-link:hover {
-            color: #007bff !important;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <img src="assets/logo bpkad.png" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/halamaninformasi">Informasi</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
-                    </li>
-                </ul>
-                <!--PROFILE DROPDOWN-->
-                <div class="dropdown pb-4 profile-dropdown">
-                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
-                        <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
-                            <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
-                        </div>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
-                        <li><a class="dropdown-item" href="/login">Log out</a></li>
-
-                    </ul>
-                </div>
-            </div>
-    </nav>
-    </nav>
+    @include('navbar.navbar')
     <!--ISI  HALAMAN-->
     <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
         <!--FORM PENGISIAN PENGADUAN-->
@@ -192,10 +66,8 @@
         </div>
     </div>
 
-    <!--FOOTER NAVIGATOR BOTTOM-->
-    <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
-        <i class="fas fa-phone-alt">E-TICKET 2024</i>
-    </div>
+    <!--FOOTER-->
+    @include('footer.footer')
 
     <!--SCRIPT  POP UP DAN DROPDOWN MENU-->
     <script>

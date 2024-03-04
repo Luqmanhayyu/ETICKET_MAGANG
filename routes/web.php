@@ -70,9 +70,18 @@ Route::get('/jawabadmin', function () {
 Route::get('/loginadmin', function () {
     return view('loginadmin'); //HALAMAN LOGIN ADMIN
 });
-Route::get('/settingprofile', function () {
-    return view('settingprofile'); //HALAMAN SETTING PROFILE USER
+Route::get('navbar', function () {
+    return view('navbar.navbar');
 });
-Route::get('/settingprofileadmin', function () {
-    return view('settingprofileadmin'); //HALAMAN SETTING PROFILE ADMIN
+Route::get('footer', function () {
+    return view('footer.footer');
+});
+Route::get('sidebar', function () {
+    return view('sidebar.sidebar');
+});
+
+
+
+Route::get('/test1', function () {
+    return view('test1'); //HALAMAN TEST CODE
 });

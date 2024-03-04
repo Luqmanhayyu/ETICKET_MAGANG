@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
-<body style="overflow: hidden;">
+<body>
     <!--STYLE CSS-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
@@ -38,6 +38,30 @@
                         hsl(218, 41%, 20%) 75%,
                         hsl(218, 41%, 19%) 80%,
                         transparent 100%);
+            }
+
+            .profile-dropdown {
+                margin-right: 100px;
+                margin-left: 0;
+                margin-top: 18px;
+            }
+
+            @media (max-width: 992px) {
+                .profile-dropdown {
+                    margin-right: 0.5rem;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .profile-dropdown {
+                    margin-right: 0.2rem;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .profile-dropdown {
+                    margin-right: 0;
+                }
             }
 
             #radius-shape-1 {
@@ -91,16 +115,32 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/login">Login</a>
+                            <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/loginadmin">Admin</a>
+                            <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
                         </li>
                     </ul>
 
                 </div>
             </div>
+            <!--PROFILE DROPDOWN-->
+            <div class="dropdown pb-4 profile-dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false" onclick="toggleDropdown()">
+                    <div class="rounded-circle overflow-hidden me-2" style="width: 30px; height: 30px;">
+                        <img src="https://github.com/mdo.png" alt="Profile" class="img-fluid">
+                    </div>
+                    <span class="profile-name">John Doe</span> <!-- Tambahkan nama disini -->
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow" id="dropdownMenu">
+                    <li><a class="dropdown-item" href="/login">Log out</a></li>
+
+                </ul>
+            </div>
         </nav>
+
+        </nav>
+
 
 
         <!--ISI HALAMAN -->
@@ -128,7 +168,6 @@
                             <p>5. Unggah bukti-bukti pendukung jika diperlukan.</p>
                             <p>6. Klik tombol "Kirim" untuk mengirim pengaduan Anda.</p>
                             <p>7. Tunggu konfirmasi dari pihak E-TICKET mengenai status pengaduan Anda.</p>
-                            <p>7. Jika kurang paham dapat mengklick bagian tata cara</p>
                         </div>
 
                     </div>
@@ -167,6 +206,15 @@
                 delay: 500,
             });
         </script>
+
+        <!--SCRIPT DROPDOWN MENU PROFILE-->
+        <script>
+            function toggleDropdown() {
+                var dropdownMenu = document.getElementById("dropdownMenu");
+                dropdownMenu.classList.toggle("show");
+            }
+        </script>
 </body>
+
 
 </html>
