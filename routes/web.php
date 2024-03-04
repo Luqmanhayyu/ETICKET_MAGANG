@@ -37,9 +37,6 @@ Route::get('/pengaduan', function () {
 Route::get('/cekpengaduan', function () {
     return view('cekpengaduan'); // HALAMAN CEK PENGADUAN
 });
-Route::get('/informasi', function () {
-    return view('informasi'); // HALAMAN INFORMASI TANPA LOGIN
-});
 Route::get('/halamaninformasi', function () {
     return view('halamaninformasi'); // HALAMAN INFORMASI DENGAN LOGIN
 });
@@ -73,15 +70,15 @@ Route::get('/loginadmin', function () {
 Route::get('navbar', function () {
     return view('navbar.navbar');
 });
+Route::get('loginNavbar', function () {
+    return view('navbar.loginNavbar');
+});
 Route::get('footer', function () {
     return view('footer.footer');
 });
 Route::get('sidebar', function () {
     return view('sidebar.sidebar');
 });
-
-
-
-Route::get('/test1', function () {
-    return view('test1'); //HALAMAN TEST CODE
-});
+//Route::get('/test1', function () {
+  //  return view('test1'); //HALAMAN TEST CODE
+//});

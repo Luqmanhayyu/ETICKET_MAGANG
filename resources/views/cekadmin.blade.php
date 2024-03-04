@@ -16,7 +16,6 @@
 <!--SIDE BAR-->
 @include('sidebar.sidebar')
 <!--ISI HALAMAN-->
-<!--TABLE-->
 <div class="col py-5">
     <table class="table">
         <thead>
@@ -55,8 +54,7 @@
         </tbody>
     </table>
 </div>
-</div>
-</div>
+
 
 </body>
 

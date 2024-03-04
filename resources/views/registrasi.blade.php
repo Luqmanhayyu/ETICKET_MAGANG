@@ -20,7 +20,7 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
-<body style="overflow: hidden;">
+<body>
     <!-- STYLE CSS-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
@@ -73,26 +73,7 @@
             }
         </style>
         <!--NAVBAR-->
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <img src="assets/logo bpkad.png" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        @include('navbar.loginNavbar')
         <!--ISI HALAMAN-->
         <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
             <div class="row gx-lg-5 align-items-center mb-5">
@@ -148,11 +129,8 @@
                 </div>
             </div>
         </div>
-        <!--FOOTER NAVIGATOR BOTTOM-->
-        <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
-            <i class="fas fa-phone-alt"></i> Telepon |
-            <i class="fab fa-instagram"></i> Instagram | E-TICKET 2024
-        </div>
+        <!--FOOTER-->
+        @include('footer.footer')
     </section>
     <!--SCRIPT CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>

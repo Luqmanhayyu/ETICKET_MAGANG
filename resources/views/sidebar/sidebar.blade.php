@@ -40,10 +40,6 @@
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             }
 
-            .card:hover {
-                transform: scale(1.05);
-            }
-
             .nav-link:hover {
                 color: #007bff !important;
             }
@@ -84,58 +80,58 @@
             }
         </style>
     </head>
+    <!--SIDE BAR-->
 
     <body>
-
-
-        <body>
-            <div class="container-fluid">
-                <div class="row flex-nowrap">
-                    <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
+                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <a href="/admindashboard">
                             <img src="assets/logo bpkad.png" alt="Logo BPKAD" width="120" height="60">
-                            <hr style="border-color: #5a6268; width: 80%;">
-                            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-light">
-                                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
-                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu"></ul>
-                                <li>
-                                    <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-light">
-                                        <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Menu</span></a>
-                                    <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
-                                        <li class="w-100">
-                                            <a href="/cekadmin" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Check Pengaduan</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="/jawabadmin" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Jawab Pengaduan</span></a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                        <li class="w-100">
-                                            <a href="#" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Product</span> 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Product</span> 2</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <!--PROFIL ADMIN-->
-                            <hr style="border-color: #5a6268;">
-                            <div class="dropdown pb-4">
-                                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                                    <span class="d-none d-sm-inline mx-1">Admin</span>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                                    <li><a class="dropdown-item" href="/loginadmin">Log out</a></li>
-
+                        </a>
+                        <hr style="border-color: #5a6268; width: 80%;">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                            <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-light">
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                            <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu"></ul>
+                            <li>
+                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle text-light">
+                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Menu</span></a>
+                                <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="/cekadmin" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Check Pengaduan</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="/jawabadmin" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Jawab Pengaduan</span></a>
+                                    </li>
                                 </ul>
-                            </div>
+                            </li>
+                            <li>
+                                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                    <li class="w-100">
+                                        <a href="#" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link px-0 text-light"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--PROFIL ADMIN-->
+                        <hr style="border-color: #5a6268;">
+                        <div class="dropdown pb-4">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                                <span class="d-none d-sm-inline mx-1">Admin</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                                <li><a class="dropdown-item" href="/loginadmin">Log out</a></li>
+
+                            </ul>
                         </div>
                     </div>
+                </div>
 
     </html>
 
