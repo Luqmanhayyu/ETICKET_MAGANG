@@ -158,7 +158,7 @@
                         <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/loginadmin">Admin</a>
+                        <a class="nav-link active" aria-current="page" href="admin/loginadmin">Admin</a>
                     </li>
 
                 </ul>

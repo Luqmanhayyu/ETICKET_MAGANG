@@ -40,32 +40,26 @@ Route::get('/cekpengaduan', function () {
 Route::get('/halamaninformasi', function () {
     return view('halamaninformasi'); // HALAMAN INFORMASI DENGAN LOGIN
 });
-Route::get('/tatacara', function () {
-    return view('tatacara'); // HALAMAN TATACARA
-});
 Route::get('/tentangkami', function () {
     return view('tentangkami'); //HALAMAN TENTANG KAMI LOGIN
 });
 Route::get('/tentangkami1', function () {
     return view('tentangkami1'); //HALAMAN TENTANG KAMI TANPA LOGIN
 });
-Route::get('/menu', function () {
-    return view('menu'); //HALAMAN MENU
+Route::get('admin/admindashboard', function () {
+    return view('admin/admindashboard'); //HALAMAN ADMIN DASHBOARD
 });
-Route::get('/admindashboard', function () {
-    return view('admindashboard'); //HALAMAN ADMIN DASHBOARD
+Route::get('admin/cekadmin', function () {
+    return view('admin/cekadmin'); //HALAMAN CEK ADMIN
 });
-Route::get('/cekadmin', function () {
-    return view('cekadmin'); //HALAMAN CEK ADMIN
+Route::get('admin/adminpengaduan', function () {
+    return view('admin/adminpengaduan'); //HALAMAN CEK PENGADUAN ADMIN
 });
-Route::get('/adminpengaduan', function () {
-    return view('adminpengaduan'); //HALAMAN CEK PENGADUAN ADMIN
+Route::get('admin/jawabadmin', function () {
+    return view('admin/jawabadmin'); //HALAMAN JAWAB PENGADUAN ADMIN
 });
-Route::get('/jawabadmin', function () {
-    return view('jawabadmin'); //HALAMAN JAWAB PENGADUAN ADMIN
-});
-Route::get('/loginadmin', function () {
-    return view('loginadmin'); //HALAMAN LOGIN ADMIN
+Route::get('admin/loginadmin', function () {
+    return view('admin/loginadmin'); //HALAMAN LOGIN ADMIN
 });
 Route::get('navbar', function () {
     return view('navbar.navbar');
