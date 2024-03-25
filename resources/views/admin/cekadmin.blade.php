@@ -32,7 +32,7 @@
                 <td>Pengaduan 1</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
                 <td>
-                    <a href="/jawabadmin" class="btn btn-primary">Jawab Pengaduan</a>
+                    <a href="/admin/jawabadmin" class="btn btn-primary">Jawab Pengaduan</a>
                 </td>
             </tr>
             <tr>
@@ -40,7 +40,7 @@
                 <td>Pengaduan 2</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
                 <td>
-                    <a href="/jawabadmin" class="btn btn-primary">Jawab Pengaduan</a>
+                    <a href="/admin/jawabadmin" class="btn btn-primary">Jawab Pengaduan</a>
                 </td>
             </tr>
             <tr>
@@ -48,7 +48,7 @@
                 <td>Pengaduan 3</td>
                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
                 <td>
-                    <a href="/jawabadmin" class="btn btn-primary">Jawab Pengaduan</a>
+                    <a href="/admin/jawabadmin" class="btn btn-primary">Jawab Pengaduan</a>
                 </td>
             </tr>
         </tbody>

@@ -21,7 +21,7 @@
     <!--STYLE CSS-->
     <section class="background-radial-gradient overflow-hidden">
         <!--NAVBAR-->
-        @include('navbar.loginNavbar')
+        @include('navbar.navbars')
 
 
         <!--ISI HALAMAN -->

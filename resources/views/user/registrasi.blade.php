@@ -16,10 +16,11 @@
     <title>
         E-TICKET
     </title>
-
+    <!--Script CDN CAPTCHA-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
-<body style="overflow: hidden;">
+<body>
     <!-- STYLE CSS-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
@@ -72,7 +73,7 @@
             }
         </style>
         <!--NAVBAR-->
-        @include('navbar.loginNavbar')
+        @include('navbar.navbar')
         <!--ISI HALAMAN-->
         <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
             <div class="row gx-lg-5 align-items-center mb-5">
@@ -104,6 +105,13 @@
                                     <input type="password" id="password" class="form-control" />
                                     <label class="form-label" for="password">Password</label>
                                 </div>
+                                <!--CAPTCHA DAN INPUT-->
+                                <div style="display: flex; align-items: center;">
+                                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+                                    <div class="form-outline mb-4">
+                                        <input type="password" id="password" class="form-control" />
+                                    </div>
+                                </div>
                                 <!--CHECKBOX-->
                                 <div class="form-check d-flex justify-content-start mb-4">
                                     <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
@@ -111,17 +119,8 @@
                                         Ingat Saya
                                     </label>
                                 </div>
-                                <!--BUTTON LOGIN-->
-                                <button type="button" class="btn btn-primary" onclick="onKirim()">Login</button>
-                                <script>
-                                    function onKirim() {
-                                        alert("Berhasil Login");
-                                        setTimeout(function() {
-                                            window.location.href = '/halaman.blade.php';
-                                        }, 1000);
-                                    }
-                                </script>
-
+                                <!--BUTTON REGISTRASI-->
+                                <button type="button" class="btn btn-primary" onclick="onKirim()">Registrasi</button>
 
                             </div>
                             </form>
@@ -130,20 +129,16 @@
                 </div>
             </div>
         </div>
-        <!--FOOTER NAVIGATOR BOTTOM-->
-        <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
-            <i class="fas fa-phone-alt"></i> Telepon |
-            <i class="fab fa-instagram"></i> Instagram | E-TICKET 2024
-        </div>
+        <!--FOOTER-->
+        @include('footer.footer')
     </section>
-    <!--Script CDN-->
+    <!--SCRIPT CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
+    <!--SCRIPT FUNGSI JAVA SCRIPT-->
     <script>
         function onKirim() {
-            alert("Berhasil Login");
-            setTimeout(function() {
-                window.location.href = '/halaman';
-            }, 1000);
+            alert("Acount Berhasil Dibuat");
+
         }
     </script>
 </body>

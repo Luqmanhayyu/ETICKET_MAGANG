@@ -20,8 +20,20 @@
 
 </head>
 
-
 <style>
+    .dropdown {
+        position: absolute;
+        top: 14px;
+
+        right: 60px;
+    }
+
+    @media (max-width: 576px) {
+        .dropdown {
+            position: static;
+        }
+    }
+
     .background-radial-gradient {
         background-color: hsl(218, 41%, 15%);
         background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%), radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);
@@ -52,7 +64,8 @@
     }
 
     .profile-dropdown {
-        margin-right: 100px;
+        margin-right: 50px;
+        /* Sesuaikan dengan keinginan Anda */
         margin-left: 0;
         margin-top: 18px;
     }
@@ -153,28 +166,36 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a href="#">
+            <a href="/login">
                 <img src="assets/logo bpkad.png" alt="Logo" width="100" height="40" class="navbar-brand d-inline-block align-text-top">
-
-            </a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/halaman">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/tentangkami">Tentang Kami</a>
+                        <a class="nav-link active" aria-current="page" href="/tentangkami1">Tentang Kami</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/loginadmin">Admin</a>
                     </li>
-
                 </ul>
+                <!--PROFIL ADMIN-->
+                <div class="dropdown pb-4">
+                    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        <span class="d-none d-sm-inline mx-1">Admin</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <a class="dropdown-item" href="/loginadmin">Log out</a>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>

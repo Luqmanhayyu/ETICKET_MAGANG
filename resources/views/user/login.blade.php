@@ -16,18 +16,14 @@
     <title>
         E-TICKET
     </title>
-    <!--Script CDN CAPTCHA-->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
-<body>
+<body style="overflow-x: auto;">
+
     <!-- STYLE CSS-->
     <section class="background-radial-gradient overflow-hidden">
         <style>
-            .body {
-                overflow: hidden;
-            }
-
             .background-radial-gradient {
                 background-color: hsl(218, 41%, 15%);
                 background-image: radial-gradient(650px circle at 0% 0%,
@@ -53,15 +49,6 @@
                 overflow: hidden;
             }
 
-            #radius-shape-2 {
-                border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
-                bottom: -60px;
-                right: -110px;
-                width: 300px;
-                height: 300px;
-                background: radial-gradient(#44006b, #ad1fff);
-                overflow: hidden;
-            }
 
             .bg-glass {
                 background-color: hsla(0, 0%, 100%, 0.9) !important;
@@ -91,54 +78,47 @@
                 <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
                     <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
                     <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-                    <div class="card bg-glass">
+                    <div class="card bg-glass" style="transform: none;">
                         <div class="card-body px-4 py-5 px-md-5">
-                            <div class="row">
-                                <div class="form-outline mb-4">
-                                    <div class="form-outline">
-                                        <input type="text" id="email" class="form-control" />
-                                        <label class="form-label" for="email">Email</label>
-                                    </div>
-                                </div>
-                                <!--PASSWORD INPUT-->
-                                <div class="form-outline mb-4">
-                                    <input type="password" id="password" class="form-control" />
-                                    <label class="form-label" for="password">Password</label>
-                                </div>
-                                <!--CAPTCHA DAN INPUT-->
-                                <div style="display: flex; align-items: center;">
-                                    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
-                                    <div class="form-outline mb-4">
-                                        <input type="password" id="password" class="form-control" />
-                                    </div>
-                                </div>
-                                <!--CHECKBOX-->
-                                <div class="form-check d-flex justify-content-start mb-4">
-                                    <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
-                                    <label class="form-check-label ml-0" for="form2Example33">
-                                        Ingat Saya
-                                    </label>
-                                </div>
-                                <!--BUTTON REGISTRASI-->
-                                <button type="button" class="btn btn-primary" onclick="onKirim()">Registrasi</button>
-
+                            <!--USERNAME INPUT-->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="username" class="form-control" />
+                                <label class="form-label" for="username">Username</label>
                             </div>
-                            </form>
+                            <!--PASSWORD INPUT-->
+                            <div class="form-outline mb-4">
+                                <input type="password" id="password" class="form-control" />
+                                <label class="form-label" for="password">Password</label>
+                            </div>
+                            <!--CHECKBOX-->
+                            <div class="form-check d-flex justify-content-start mb-4">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="form2Example33" checked />
+                                <label class="form-check-label ml-0" for="form2Example33">
+                                    Ingat Saya
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn btn-primary" onclick="onKirim()">Login</button>
                         </div>
+
+
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--FOOTER-->
-        @include('footer.footer')
+
+                <!--FOOTER NAVIGATOR BOTTOM-->
+                <div class="bottomnavbar text-center pt-5 pb-5" style="color: white;">
+                    <i class="fab fa-instagram"></i> https://bpkad.surabaya.go.id/ | E-TICKET 2024
+                </div>
     </section>
-    <!--SCRIPT CDN -->
+    <!--Script CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
-    <!--SCRIPT POP UP-->
+    <!--SCRIPT FUNGSI JAVA SCRIPT-->
     <script>
         function onKirim() {
-            alert("Acount Berhasil Dibuat");
-
+            alert("Berhasil Login");
+            setTimeout(function() {
+                window.location.href = '/halaman';
+            }, 1000);
         }
     </script>
 </body>

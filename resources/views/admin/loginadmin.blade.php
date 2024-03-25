@@ -24,6 +24,7 @@
 
 <body>
     <!--STYLE CSS-->
+
     <section class="background-radial-gradient overflow-hidden">
         <style>
             .body {
@@ -32,18 +33,8 @@
 
             .background-radial-gradient {
                 background-color: hsl(218, 41%, 15%);
-                background-image: radial-gradient(650px circle at 0% 0%,
-                        hsl(218, 41%, 35%) 15%,
-                        hsl(218, 41%, 30%) 35%,
-                        hsl(218, 41%, 20%) 75%,
-                        hsl(218, 41%, 19%) 80%,
-                        transparent 100%),
-                    radial-gradient(1250px circle at 100% 100%,
-                        hsl(218, 41%, 45%) 15%,
-                        hsl(218, 41%, 30%) 35%,
-                        hsl(218, 41%, 20%) 75%,
-                        hsl(218, 41%, 19%) 80%,
-                        transparent 100%);
+                background-image: radial-gradient(650px circle at 0% 0%, hsl(218, 41%, 35%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%),
+                    radial-gradient(1250px circle at 100% 100%, hsl(218, 41%, 45%) 15%, hsl(218, 41%, 30%) 35%, hsl(218, 41%, 20%) 75%, hsl(218, 41%, 19%) 80%, transparent 100%);
             }
 
             #radius-shape-1 {
@@ -69,7 +60,17 @@
                 background-color: hsla(0, 0%, 100%, 0.9) !important;
                 backdrop-filter: saturate(200%) blur(25px);
             }
+
+            /* Tambahkan ini */
+            .card {
+                transition: transform 0.3s ease;
+            }
+
+            .card:hover {
+                transform: scale(1);
+            }
         </style>
+
         <!--NAVBAR-->
         @include('navbar.loginNavbar')
         <!--ISI HALAMAN-->

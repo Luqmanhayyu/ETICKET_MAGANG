@@ -14,19 +14,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cBqVbqk3F5sib9xrbzF6dhxkYY5bPb1SboF2F1n9zfuLZjX1uxbIogHwX2BohjD" crossorigin="anonymous"></script>
     <!-- LINK CDN AOS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <!--STYLE CSS-->
-    <link rel="stylesheet" href="style.css">
+
+    <!-- STYLE CSS -->
+    <stle>
+        <section class="background-radial-gradient overflow-hidden">
+
+    </stle>
 </head>
+
 
 <body style="overflow-x: hidden;">
     <!--NAVBAR-->
-    @include('navbar.navbar')
+    @include('navbar.navbars')
 
     <!--ISI HALAMAN -->
     <section class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
         <div class="row gx-lg-5 align-items-center mb-5">
             <div class="col-lg-6 mb-5 mb-lg-0">
-                <h2 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)" id="fade-in">Tata Cara Pengaduan E-TICKET Pelayanan yang Benar</h2>
+                <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+                    Tata Cara Pengaduan<br />
+                    <span style="color: hsl(218, 81%, 75%)">Ticket Yang Benar</span>
+                </h1>
                 <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)" id="slide-up">
                     Selamat datang di E-TICKET! Kami adalah tim yang berkomitmen untuk memberikan layanan terbaik
                     dalam menangani pengaduan E-TICKET. Setiap laporan yang Anda berikan merupakan kesempatan bagi kami
@@ -84,7 +92,7 @@
         });
     </script>
 
-    <!--SCRIPT DROPDOWN MENU PROFILE-->
+    <!--SCRIPT FUNGSI JAVA SCRIPT-->
     <script>
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");

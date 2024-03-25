@@ -23,30 +23,30 @@ Route::get('login/actionlogout', [LoginController::class, 'actionlogout'])->name
 
 
 Route::get('/', function () {
-    return view('login');
+    return view('user/login');
 });
 Route::get('/registrasi', function () {
-    return view('registrasi'); //REGISTER
+    return view('user/registrasi'); //REGISTER
 });
 Route::get('/halaman', function () {
-    return view('halaman'); //HALAMAN UTAMA
+    return view('user/halaman'); //HALAMAN UTAMA
 });
 Route::get('/pengaduan', function () {
-    return view('pengaduan'); //HALAMAN PENGADUAN
+    return view('user/pengaduan'); //HALAMAN PENGADUAN
 });
 Route::get('/cekpengaduan', function () {
-    return view('cekpengaduan'); // HALAMAN CEK PENGADUAN
+    return view('user/cekpengaduan'); // HALAMAN CEK PENGADUAN
 });
 Route::get('/halamaninformasi', function () {
-    return view('halamaninformasi'); // HALAMAN INFORMASI DENGAN LOGIN
+    return view('user/halamaninformasi'); // HALAMAN INFORMASI DENGAN LOGIN
 });
 Route::get('/tentangkami', function () {
-    return view('tentangkami'); //HALAMAN TENTANG KAMI LOGIN
+    return view('user/tentangkami'); //HALAMAN TENTANG KAMI LOGIN
 });
 Route::get('/tentangkami1', function () {
-    return view('tentangkami1'); //HALAMAN TENTANG KAMI TANPA LOGIN
+    return view('user/tentangkami1'); //HALAMAN TENTANG KAMI TANPA LOGIN
 });
-Route::get('admin/admindashboard', function () {
+Route::get('/admindashboard', function () {
     return view('admin/admindashboard'); //HALAMAN ADMIN DASHBOARD
 });
 Route::get('admin/cekadmin', function () {
@@ -58,21 +58,21 @@ Route::get('admin/adminpengaduan', function () {
 Route::get('admin/jawabadmin', function () {
     return view('admin/jawabadmin'); //HALAMAN JAWAB PENGADUAN ADMIN
 });
-Route::get('admin/loginadmin', function () {
+Route::get('/loginadmin', function () {
     return view('admin/loginadmin'); //HALAMAN LOGIN ADMIN
 });
+Route::get('navbar1', function () {
+    return view('navbar.navbars'); //HALAMAN NAVBARS
+});
 Route::get('navbar', function () {
-    return view('navbar.navbar');
+    return view('navbar.navbar'); //HALAMAN NAVBAR
 });
 Route::get('loginNavbar', function () {
-    return view('navbar.loginNavbar');
+    return view('navbar.loginNavbar'); //HALAMAN LOGIN.NAVBAR
 });
 Route::get('footer', function () {
-    return view('footer.footer');
+    return view('footer.footer'); //HALAMAN FOOTER
 });
 Route::get('sidebar', function () {
-    return view('sidebar.sidebar');
+    return view('sidebar.sidebar'); //HALAMAN SIDEBAR
 });
-//Route::get('/test1', function () {
-  //  return view('test1'); //HALAMAN TEST CODE
-//});

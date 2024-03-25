@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.header-text {
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-text::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 3px;
+    background-color: #6c5ce7;
+    margin-top: 10px;
+}
+
+.bottom-navbar {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px;
+}
+
+.profile-dropdown {
+    margin-right: 100px;
+    margin-left: auto;
+    margin-top: 18px;
+}
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(
+            650px circle at 0% 0%,
+            hsl(218, 41%, 35%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%
+        ),
+        radial-gradient(
+            1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%
+        );
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+}
+
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+.body {
+    overflow: hidden;
+}
+
+.background-radial-gradient {
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(
+            650px circle at 0% 0%,
+            hsl(218, 41%, 35%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%
+        ),
+        radial-gradient(
+            1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%
+        );
+}
+
+#radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+}
+
+#radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+}
+
+.bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+}
+
+/* Tambahkan ini */
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1);
+}
