@@ -52,7 +52,10 @@
     <!--SCRIPT FUNGSI JAVA SCRIPT-->
     <script>
         function onKirim() {
-            alert("Pesan telah dikirim!");
+            alert("Pengaduan Berhasil Di kirim");
+            setTimeout(function() {
+                window.location.href = '/halaman';
+            }, 1000);
         }
     </script>
 </body>

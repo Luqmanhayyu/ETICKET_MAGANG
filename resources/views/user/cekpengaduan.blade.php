@@ -36,7 +36,11 @@
     <!--FOOTER NAVIGATOR BOTTOM-->
     @include('footer.footer')
     <!--SCRIPT FUNGSI JAVA SCRIPT-->
-    <script src="script.js"></script>
+    <script>
+        function onKirim() {
+            alert("Data Ditemukan");
+        }
+    </script>
 </body>
 
 </html>
